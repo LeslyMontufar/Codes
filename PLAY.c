@@ -1,13 +1,3 @@
-/*Meu código playfair
-	-com espaço no final não funciona ainda
-
-	- está dando erro na deografar, que é a mesma coisa que tem em criptografar (acho que é porque não sei usar ponteiros direito) 
-	- tanto faz a ordem em que se declara as funções?
-	- como configurar o Android Studio para ver o aplicativo no meu celular?
-	- MIT app inventor 2: não dá pra aumentar o tempo em que o sound vai tocar? 
-	- conio2.h: tenho que aprender as funções ainda :(
-*/
-
 #include<stdio.h>
 #include<ctype.h>
 #include<conio2.h>
@@ -20,7 +10,7 @@
 //	RED, MAGENTA, BROWN, LIGHTGRAY,
 //	DARKGRAY, LIGHTBLUE, LIGHTGREEN, LIGHTCYAN,
 //	LIGHTRED, LIGHTMAGENTA, YELLOW, WHITE
-//}
+//} //cores da conio2.h;
 
 int comparaComOutrasLetras(char vetor[], char letra, int pos) {
     int i;
@@ -69,7 +59,7 @@ void printaMatriz(char matriz[][5]) {
         printf("\n\n");
     }
 }
-void apresentacao(int *opcao) { //quando recebe sem ser como ponteiro == recebe uma cópia da variavel a ser modificada
+void apresentacao(int *opcao) { //quando recebe sem ser como ponteiro == recebe uma cÃ³pia da variavel a ser modificada
     //como ponteiro, vai mudar a variavel cujo *ponteiro aponta
     gotoxy(12,4);
     textbackground(LIGHTMAGENTA);
@@ -86,9 +76,6 @@ void apresentacao(int *opcao) { //quando recebe sem ser como ponteiro == recebe 
     textcolor(YELLOW);
     scanf("%i", opcao);
 	textcolor(WHITE);
-	//*opcao , tudo isso é a variável agora entao opcao!= *opcao, em toda a funçao só existe *opcao
-    //*opcao é o valor      valor
-    //opcao é o endereco    &valor
 }
 
 void criptografar(char letras[][5], char frase[], char crip[]) {
@@ -107,16 +94,12 @@ void criptografar(char letras[][5], char frase[], char crip[]) {
                 }
             } else {
                 grupos[i][j]='X';
-                //break;//nao precisa, por que depois de fazer i++ faz o break, aí em baixo só precisaria colocar i-1;
-                //quando entrar na condição do frase[index], vai somar i++, entao do mesmo jeito precisa ser i-1 lá embaixo;
             }
         }
-        //aqui o i vai somar 1 e só depois disso vai verificar se frase[index] é verdadeiro(existe)
-        //(e não vai existir- nao vai ser veradeiro);
     }
-    int line, letra1i, letra1j, letra2i, letra2j, ii, jj;//ii e jj só são auxiliares para percorer a matriz;
+    int line, letra1i, letra1j, letra2i, letra2j, ii, jj;//ii e jj sÃ³ sÃ£o auxiliares para percorer a matriz;
     index=0;
-    for(line=0; line<=i-1; line++) { //line<i seria a mesma coisa, mas do jeito que está dá pra entender melhor a lógica;
+    for(line=0; line<=i-1; line++) { //line<i seria a mesma coisa, mas do jeito que estÃ¡ dÃ¡ pra entender melhor a lÃ³gica;
 
         for(ii=0; ii<5; ii++) {
             for(jj=0; jj<5; jj++) {
@@ -194,7 +177,8 @@ void criptografar(char letras[][5], char frase[], char crip[]) {
 //    }
 //    return i;
 //}
-void deografar(char letras[][5], char frase[], char crip[]) {
+void descriptografar(char letras[][5], char frase[], char crip[]) { //funcao para teste Ã© sÃ³ colocar um if na crip para descriptografar
+								//ou o contrario
     char grupos[n][2];
     int i, j, index=0;
     for(i=0; frase[index]; i++) {
@@ -213,10 +197,9 @@ void deografar(char letras[][5], char frase[], char crip[]) {
         }
         printf("%c%c |", grupos[i][0], grupos[i][1]);
     }
-    int line, letra1i, letra1j, letra2i, letra2j, ii, jj;//ii e jj só são auxiliares para percorer a matriz;
+    int line, letra1i, letra1j, letra2i, letra2j, ii, jj;//ii e jj sÃ³ sÃ£o auxiliares para percorer a matriz;
     index=0;
-    for(line=0; line<=i-1; line++) { //line<i seria a mesma coisa, mas do jeito que está dá pra entender melhor a lógica;
-
+    for(line=0; line<=i-1; line++) { //line<i seria a mesma coisa, mas do jeito que estÃ¡ dÃ¡ pra entender melhor a lÃ³gica;
         for(ii=0; ii<5; ii++) {
             for(jj=0; jj<5; jj++) {
                 if(grupos[line][0]==letras[ii][jj]) {
@@ -280,10 +263,7 @@ int main() {
     frase[0]=0;
     do {
         system("cls"); //passar como ponteiro, ao inves de uma copia da variavel, economiza espaco na memoria!
-        apresentacao(&opcao);//ou podia gerar outra variavel : *pOpcao = &opcao
-        //nesse caso teria que enviar só pOpcao, que é o endereço do ponteiro (uma versão modificavel da variável);
-        //dá pra pensar que se  *pTeste= &teste =>  pTeste= teste,    assim * pode cortar com &
-        //o ponteiro serve para passar a variavel por referencia, como já ocorre com matrizes e vetores.
+        apresentacao(&opcao);
         switch(opcao) {
         case 1:
             printf("\nChave: ");
@@ -320,7 +300,7 @@ int main() {
         case 4:
             if(existeChave && frase[0]) {
                 printaMatriz(letras);
-                deografar(letras, frase, crip);
+                descriptografar(letras, frase, crip);
                 printf("\nFrase original: %s", frase);
                 printf("\nFrase deografada: %s\n", crip);
             } else
@@ -330,7 +310,7 @@ int main() {
 
         case 5:
             existeChave=0;
-            frase[0]=0;//limpa o vetor de char adicionando \0 à primeira posição do vetor;
+            frase[0]=0;//limpa o vetor de char adicionando \0 Ã  primeira posiÃ§Ã£o do vetor;
             break;
 
         default:
@@ -342,4 +322,3 @@ int main() {
 }
 /*lembrar de no final passar de Java para norma ANSI*/
 /*settings > editor > source formater > pronto! mudar para ANSI*/
-
