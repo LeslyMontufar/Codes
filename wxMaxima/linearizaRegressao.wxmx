@@ -1,0 +1,126 @@
+kill(all);
+erroinstrumentox : 0.05;
+erroinstrumentoy : 0.0001;
+
+x:[19.5, 22.5, 25.5, 28.5, 31.5, 34.5, 37.5, 40.5, 43.5, 46.5];/*modificavel*/
+numx: length(x);
+
+ytabelado: matrix([0.1938, 0.1935, 0.1941, 0.1944],
+[0.2086, 0.2073, 0.2087, 0.2068],    
+[0.2225, 0.2217, 0.2228, 0.2211],    
+[0.2354, 0.2357, 0.2357, 0.2353],
+[0.2481, 0.2491, 0.2486, 0.2491],
+[0.2602, 0.2599, 0.2601, 0.2603],
+[0.2720, 0.2721, 0.2725, 0.2723],
+[0.2835, 0.2827, 0.2828, 0.2834],
+[0.2939, 0.2938, 0.2941, 0.2939],
+[0.3045, 0.3044, 0.3043, 0.3053]
+);/*modificavel*/
+numy: length(ytabelado[1]);
+
+/*y medios*/
+array([y, dpmy, erry, xlsubstituicao, ylsubstituicao, errxlsub,errylsub, errx, derivadaparcialx], 1, numx);
+array([xllog, yllog, errxllog, erryllog],1,numx);
+
+xSub(varx):= varx;/*modificavel*/
+ySub(vary):= vary^2;/*modificavel*/
+derivadaparcialxSub(varx):=diff(xSub(varx), varx);
+derivadaparcialySub(vary):=diff(ySub(vary), vary);
+
+xLog(varx):= log(varx);/*modificavel*/
+yLog(vary):= log(vary);/*modificavel*/
+derivadaparcialxLog(var):=diff(xLog(var), var);
+derivadaparcialyLog(var):=diff(yLog(var), var);
+
+for index:1 thru numx step 1 do(
+    y[1,index]: sum(ytabelado[index,i], i, 1, numy)/numy,
+    dpmy[1,index]: sqrt(sum((ytabelado[index, i]-y[1, index])^2,i,1,numy)/(numy-1))/float(sqrt(numy)),
+    erry[1,index]: erroinstrumentoy,
+    erry[1,index]: sqrt(dpmy[1,index]^2+erry[1,index]^2),/*o erro em y alem de instrumental eh estatistico*/
+    errx[1,index]: erroinstrumentox,
+    
+    xlsubstituicao[1,index]: xSub(x[index]),
+    ylsubstituicao[1,index]: ySub(y[1,index]),
+    errxlsub[1,index]:sqrt((at(derivadaparcialxSub(varx),[varx=xlsubstituicao[1,index]])*errx[1,index])^2), /*usei o at por causa do diff*/
+    errylsub[1,index]:sqrt((at(derivadaparcialySub(vary),[vary=ylsubstituicao[1,index]])*erry[1,index])^2),
+    
+    xllog[1,index]: xLog(x[index]),
+    yllog[1,index]: yLog(y[1,index]),
+    errxllog[1,index]: sqrt((at(derivadaparcialxLog(var),[var=xllog[1,index]])*errx[1,index])^2),
+    erryllog[1,index]: sqrt((at(derivadaparcialyLog(var),[var=yllog[1,index]])*erry[1,index])^2)
+)$
+
+/*printa resultados da Tabela 2*/
+"Tabela 2:";
+for index:1 thru numx step 1 do(
+    print("y: ",y[1,index], "
+            dpmy:", dpmy[1,index], "
+            erroy:", erry[1,index])
+)$
+
+/*printa resultados Tabela 3*/
+"Linearização por substituição: ";
+for index:1 thru numx step 1 do(
+    print("X=x: ",xlsubstituicao[1,index], "
+            Y=y^2:", ylsubstituicao[1,index], "
+            erroX:", errxlsub[1,index],"
+            errroY:", errylsub[1,index])
+)$
+
+/*printa resultados da Tabela 4*/
+"Linearização usando logaritmos: ";
+for index:1 thru numx step 1 do(
+    print("X= ln(x): ",xllog[1,index], "
+            Y= ln(y):", yllog[1,index], "
+            erroX:", errxllog[1,index],"
+            errroY:", erryllog[1,index])
+)$
+
+/*reta de regressao linear*/
+array([w],2,numx);
+array([E,F,G,H,J,D,a,b,erra,errb],1,2);
+for index:1 thru numx step 1 do(
+    w[1,index]: 1/(errylsub[1,index]^2),
+    w[2,index]: 1/(erryllog[1,index]^2)
+);
+
+for index:1 thru 2 step 1 do(
+        E[1,index]:sum(w[index,i], i, 1, numx),
+    if index=1 then(
+        F[1,index]:sum(w[index,i]*xlsubstituicao[1,i], i, 1,numx),
+        G[1,index]:sum((w[index,i]*ylsubstituicao[1,i]), i,1,numx),
+        H[1,index]:sum(w[index,i]*xlsubstituicao[1,i]*xlsubstituicao[1,i], i, 1,numx),
+        J[1,index]:sum((w[index,i]*xlsubstituicao[1,i]*ylsubstituicao[1,i]), i, 1,numx)
+    )else(
+        F[1,index]:sum(w[index,i]*xllog[1,i], i, 1,numx),
+        G[1,index]:sum((w[index,i]*yllog[1,i]), i,1,numx),
+        H[1,index]:sum(w[index,i]*xllog[1,i]*xllog[1,i], i, 1,numx),
+        J[1,index]:sum((w[index,i]*xllog[1,i]*yllog[1,i]), i, 1,numx)
+    ),
+    
+    D[1,index]: E[1,index]*H[1,index]-F[1,index]*F[1,index],
+
+    a[1,index]:(E[1,index]*J[1,index]-G[1,index]*F[1,index])/D[1,index],
+    b[1,index]:(G[1,index]*H[1,index]-J[1,index]*F[1,index])/D[1,index],
+    erra[1,index]:sqrt(E[1,index]/D[1,index]),
+    errb[1,index]:sqrt(H[1,index]/D[1,index])
+)$
+
+/*printa os coeficientes da reta de regressao e seus respectivos erros*/
+"Coeficientes da reta de regressao por: Substituição (b=0) / Logaritmos (a=0.5)";
+for index:1 thru 2 step 1 do(
+    print("a:",a[1,index], "
+            b:", b[1,index], "
+            err a:", erra[1,index],"
+            err b:", errb[1,index])
+)$
+
+/*Fisica: gravidade durante a queda livre*/
+gSub(a):= 2/a;
+gLog(b):= 2/(exp(2*b));
+
+derivadaparcialgSub(var):=diff(gSub(var),var);
+derivadaparcialgLog(var):=diff(gLog(var),var);
+
+print("Gravidade (Substituição) = ", gSub(a[1,1]), "+-", sqrt((at(derivadaparcialgSub(var),[var=a[1,1]])*erra[1,1])^2), " ");
+print("Gravidade (Logaritmos) = ", gLog(b[1,2]), "+-", sqrt((at(derivadaparcialgLog(var),[var=b[1,2]])*errb[1,2])^2), " ");
