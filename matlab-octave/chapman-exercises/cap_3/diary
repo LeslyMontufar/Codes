@@ -1,0 +1,309 @@
+>> clear
+>> clc
+>> value = 123.4567e2;
+>> fprintf('value = %e\n', value);
+value = 1.234567e+04
+>> fprintf('value = %f\n', value);
+value = 12345.670000
+>> fprintf('value = %g\n', value);
+value = 12345.7
+>> fprintf('value = %12.4f\n', value);
+value =   12345.6700
+>> clear
+>> clc
+>> a = [1, 0
+2, 1]
+a =
+
+   1   0
+   2   1
+
+>> b = [-1, 2, 
+0, 1]
+b =
+
+  -1   2
+   0   1
+
+>> c=[3, 2]'
+c =
+
+   3
+   2
+
+>> d=5
+d =  5
+>> a*b
+ans =
+
+  -1   2
+  -2   5
+
+>> a.*b
+ans =
+
+  -1   0
+   0   1
+
+>> a*c
+ans =
+
+   3
+   8
+
+>> a + c
+ans =
+
+   4   3
+   4   3
+
+>> a+d
+ans =
+
+   6   5
+   7   6
+
+>> a.*d
+ans =
+
+    5    0
+   10    5
+
+>> a*d
+ans =
+
+    5    0
+   10    5
+
+>> clear ans
+>> whos
+Variables in the current scope:
+
+   Attr Name        Size                     Bytes  Class
+   ==== ====        ====                     =====  ===== 
+        a           2x2                         32  double
+        b           2x2                         32  double
+        c           2x1                         16  double
+        d           1x1                          8  double
+
+Total is 11 elements using 88 bytes
+
+>> inv(a)
+ans =
+
+   1   0
+  -2   1
+
+>> a
+a =
+
+   1   0
+   2   1
+
+>> inv(b)
+ans =
+
+  -1   2
+   0   1
+
+>> b
+b =
+
+  -1   2
+   0   1
+
+>> inv(a)*b
+ans =
+
+  -1   2
+   2  -3
+
+>> a*inv(b)
+ans =
+
+  -1   2
+  -2   5
+
+>> disp('diferentes!');
+diferentes!
+>> clear
+>> clc
+>> x = 5
+x =  5
+>> whos
+Variables in the current scope:
+
+   Attr Name        Size                     Bytes  Class
+   ==== ====        ====                     =====  ===== 
+        x           1x1                          8  double
+
+Total is 1 element using 8 bytes
+
+>> str_int = int2str(x);
+>> whos
+Variables in the current scope:
+
+   Attr Name         Size                     Bytes  Class
+   ==== ====         ====                     =====  ===== 
+        str_int      1x1                          1  char
+        x            1x1                          8  double
+
+Total is 2 elements using 9 bytes
+
+>> inteiro = str2num(str_int)
+inteiro =  5
+>> whos
+Variables in the current scope:
+
+   Attr Name         Size                     Bytes  Class
+   ==== ====         ====                     =====  ===== 
+        inteiro      1x1                          8  double
+        str_int      1x1                          1  char
+        x            1x1                          8  double
+
+Total is 3 elements using 17 bytes
+
+>> clear
+>> clc
+>> x = 0:1:10;
+>> y = x.^2 - 10.*x +15;
+>> clear
+>> clc
+>> xySimples
+>> xySimples
+>> xySimples
+>> diaMultiplos
+>> xySimples
+>> diaMultiplos
+>> diaMultiplos
+>> diaMultiplos
+>> estilo_cor
+>> estilo_cor
+>> estilo_cor
+parse error near line 8 of file C:\Users\MULTI_E-FIS_MECS\Documents\Octave-codes\estilo_cor.m
+
+  syntax error
+
+>>> title('Red --
+                 ^
+
+>> estilo_cor
+>> estilo_cor
+>> com_legend
+>> com_legend
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    __plt__>__plt2vv__ at line 495 column 10
+    __plt__>__plt2__ at line 242 column 14
+    __plt__ at line 127 column 16
+    loglog at line 60 column 10
+    com_legend at line 7 column 1
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    __plt__>__plt2vv__ at line 495 column 10
+    __plt__>__plt2__ at line 242 column 14
+    __plt__ at line 127 column 16
+    loglog at line 60 column 10
+    com_legend at line 7 column 1
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    __plt__>__plt2vv__ at line 495 column 10
+    __plt__>__plt2__ at line 242 column 14
+    __plt__ at line 107 column 18
+    loglog at line 60 column 10
+    com_legend at line 7 column 1
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    __plt__>__plt2vv__ at line 495 column 10
+    __plt__>__plt2__ at line 242 column 14
+    __plt__ at line 107 column 18
+    loglog at line 60 column 10
+    com_legend at line 7 column 1
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    __plt__>__plt2vv__ at line 495 column 10
+    __plt__>__plt2__ at line 242 column 14
+    __plt__ at line 107 column 18
+    loglog at line 60 column 10
+    com_legend at line 7 column 1
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    __plt__>__plt2vv__ at line 495 column 10
+    __plt__>__plt2__ at line 242 column 14
+    __plt__ at line 107 column 18
+    loglog at line 60 column 10
+    com_legend at line 7 column 1
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    text at line 170 column 10
+    legend at line 1013 column 17
+    com_legend at line 11 column 1
+warning: axis: omitting non-positive data in log plot
+warning: called from
+    text at line 170 column 10
+    legend at line 1013 column 17
+    com_legend at line 11 column 1
+>> warning: axis: omitting non-positive data in log plot
+warning: axis: omitting non-positive data in log plot
+warning: axis: omitting non-positive data in log plot
+com_legend
+>> ex2_3
+error: 'ex2_3' undefined near line 1 column 1
+>> ex_2_3
+parse error near line 12 of file C:\Users\MULTI_E-FIS_MECS\Documents\Octave-codes\ex_2_3.m
+
+  syntax error
+
+>>> K = (5//9)*F - 32 + 273.15;
+           ^
+
+>> ex_2_3
+Enter with the Fahrenheit temperature: 212
+212 ºF corresponds to 358.928 kelvins
+>> 
+>> ex_2_3
+parse error near line 13 of file C:\Users\MULTI_E-FIS_MECS\Documents\Octave-codes\ex_2_3.m
+
+  syntax error
+
+>>> fprintf('%g ºF corresponds to,'F' %g kelvins\n', K);
+                                    ^
+
+>> ex_2_3
+Enter with the Fahrenheit temperature: 212
+212.000000 F corresponds to 373.150000 kelvins
+>> ex_2_3
+Enter with the Fahrenheit temperature: -110
+-110.000000 F corresponds to 194.261111 kelvins
+>> ex_2_3
+Enter with the Fahrenheit temperature: 32
+32.000000 corresponds to 273.150000 kelvins
+>> ex_2_3
+Enter with the Fahrenheit temperature: 32
+K =  273.15
+32.000000 corresponds to 273.150000 kelvins
+>> clc
+>> clc
+>> ex_2_3
+Enter with the Fahrenheit temperature: 121
+K =  322.59
+121.000000 corresponds to 322.594444 kelvins
+>> exit
+>> open
+error: called from
+    print_usage at line 79 column 5
+    open at line 70 column 5
+error: Invalid call to open.  Correct usage is:
+
+ -- open FILE
+ -- OUTPUT = open (FILE)
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at https://www.octave.org and via the help@octave.org
+mailing list.
+>> open diary
+>> diary off

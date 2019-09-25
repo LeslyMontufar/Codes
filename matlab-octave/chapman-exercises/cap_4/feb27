@@ -1,0 +1,10 @@
+>> fprintf('\bfOperacoes de suconjuntos!');
+fOperacoes de suconjuntos!>> 
+>> disp('Boa noite!\n');
+Boa noite!\n
+>> fprintf('Boa noite!\n');
+Boa noite!
+>> doc open 
+>> open feb27
+>> exit
+>> 

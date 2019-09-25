@@ -1,0 +1,43 @@
+# Created by Octave 5.1.0, Wed Feb 27 23:05:49 2019 GMT <unknown@Montufar-HP>
+# name: a
+# type: matrix
+# rows: 3
+# columns: 3
+ 1 2 3
+ 4 5 6
+ 7 8 9
+
+
+# name: ans
+# type: matrix
+# rows: 3
+# columns: 3
+ 1 1 1
+ 1 1 1
+ 1 1 1
+
+
+# name: b
+# type: bool matrix
+# rows: 3
+# columns: 3
+ 0 0 0
+ 0 0 1
+ 1 1 1
+
+
+# name: c
+# type: matrix
+# rows: 3
+# columns: 3
+ 1 1 1
+ 1 1 1
+ 1 1 1
+
+
+# name: ii
+# type: range
+# base, limit, increment
+1 9 1
+
+

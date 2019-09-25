@@ -1,0 +1,3160 @@
+>> diary on
+>> diary off
+>> which myoctave
+>> path
+
+Octave's search path contains the following directories:
+
+.
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\5.1.0\site\oct\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\site\oct\api-v53\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\site\oct\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\site\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\api-v53\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\m\once_only
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\m\startup
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\5.1.0\oct\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\audio
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\deprecated
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\elfun
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\general
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\geometry
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\gui
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\help
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\image
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\io
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\java
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\legacy
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\linear-algebra
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\miscellaneous
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\ode
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\optimization
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\path
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\pkg
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot\appearance
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot\draw
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot\util
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\polynomial
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\prefs
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\profiler
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\set
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\signal
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\sparse
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\specfun
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\special-matrix
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\startup
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\statistics
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\strings
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\testfun
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\time
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\data
+
+>> A = pi * 0.1^2
+A =  0.031416
+>> V = A * 0.5
+V =  0.015708
+>> whos
+Variables in the current scope:
+
+   Attr Name        Size                     Bytes  Class
+   ==== ====        ====                     =====  ===== 
+        A           1x1                          8  double
+        V           1x1                          8  double
+        ans         1x1                          8  double
+
+Total is 3 elements using 24 bytes
+
+>> pi
+ans =  3.1416
+>> e
+ans =  2.7183
+>> clc
+>> t=5
+t =  5
+>> x0 = 10
+x0 =  10
+>> clear
+>> clc
+>> t=5
+t =  5
+>> x0=10
+x0 =  10
+>> v0=15
+v0 =  15
+>> a=-9.81
+a = -9.8100
+>> x = x0 + v0*t + (1/2.0)*a*t^2
+x = -37.625
+>> clear
+>> x=3
+x =  3
+>> y=3
+y =  3
+>> y=4
+y =  4
+>> (x^2*y^3)/(x-y)^2
+ans =  576
+>> calc_area.m
+error: 'calc_area' undefined near line 1 column 1
+>> clc
+>> clear
+>> clc
+>> clac_area
+error: 'clac_area' undefined near line 1 column 1
+>> calc_area
+The area of a circle is 19.635
+>> sin_x
+>> plot(x,y)
+>> test1
+>> help esp
+error: called from
+    help>do_contents at line 209 column 5
+    help at line 108 column 9
+error: help: 'esp' not found
+>> help exp
+'exp' is a built-in function from the file libinterp/corefcn/mappers.cc
+
+ -- exp (X)
+     Compute 'e^x' for each element of X.
+
+     To compute the matrix exponential, see *note Linear Algebra::.
+
+     See also: log.
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at https://www.octave.org and via the help@octave.org
+mailing list.
+>> lookfor log10
+log10               Compute the base-10 logarithm of each ele
+                    ment of X.
+>> clear
+>> u=1
+u =  1
+>> v=3
+v =  3
+>> 4u/3v
+parse error:
+
+  syntax error
+
+>>> 4u/3v
+     ^
+
+>> 4*u/3*v
+ans =  4
+>> (4*u)/(3*v)
+ans =  0.44444
+>> (4*u)/3*v
+ans =  4
+>> (4*u)/(3*v)
+ans =  0.44444
+>> (2*v^(-2))/(u+v)^2
+ans =  0.013889
+>> (v^3)/(v^3-u^3)
+ans =  1.0385
+>> 4/3
+ans =  1.3333
+>> (4/3)*pi*v^2
+ans =  37.699
+>> dir
+.             calc_area.m   myoctave      test1.m
+..            image-2.10.0  sin_x.m
+>> path
+
+Octave's search path contains the following directories:
+
+.
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\5.1.0\site\oct\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\site\oct\api-v53\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\site\oct\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\site\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\api-v53\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\m\once_only
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\site\m\startup
+C:\Octave\OCTAVE~1.0\mingw64\lib\octave\5.1.0\oct\x86_64-w64-mingw32
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\audio
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\deprecated
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\elfun
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\general
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\geometry
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\gui
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\help
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\image
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\io
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\java
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\legacy
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\linear-algebra
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\miscellaneous
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\ode
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\optimization
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\path
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\pkg
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot\appearance
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot\draw
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\plot\util
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\polynomial
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\prefs
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\profiler
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\set
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\signal
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\sparse
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\specfun
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\special-matrix
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\startup
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\statistics
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\strings
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\testfun
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\m\time
+C:\Octave\OCTAVE~1.0\mingw64\share\octave\5.1.0\data
+
+>> help adddir
+error: called from
+    help>do_contents at line 209 column 5
+    help at line 108 column 9
+error: help: 'adddir' not found
+>> lookfor add
+readdir             Return the names of files in the director
+                    y DIR as a cell array of strings.
+addlistener         Register FCN as listener for the property
+                    PROP of the graphics object H.
+addproperty         Create a new property named NAME in graph
+                    ics object H.
+suppress_verbose_help_message Query or set the internal varia
+                    ble that controls whether Octave will add
+                    d additional help information to the end
+                    of the output from the ‘help’ comman
+                    nd and usage messages for built-in comman
+                    nds.
+add_input_event_hook Add the named function or function handl
+                    e FCN to the list of functions to call pe
+                    eriodically when Octave is waiting for in
+                    nput.
+addpath             Add named directories to the function sea
+                    rch path.
++                   Addition operator.
+dialog              Create an empty modal dialog window to wh
+                    ich other uicontrols can be added.
+javaaddpath         Add CLSPATH to the dynamic class path of 
+                    the Java virtual machine.
+pkg                 Manage or query packages (groups of add-o
+                    n functions) for Octave.
+clabel              Add labels to the contours of a contour p
+                    lot.
+datetick            Add date-formatted tick labels to an axis
+                    .
+camlight            Add a light object to a figure using a si
+                    mple interface.
+colorbar            Add a colorbar to the current axes.
+hold                Toggle or set the "hold" state of the plo
+                    tting engine which determines whether new
+                    w graphic objects are added to the plot o
+                    or replace the existing objects.
+ishold              Return true if the next plot will be adde
+                    d to the current plot, or false if the pl
+                    lot device will be cleared before drawing
+                    g the next plot.
+addpref             Add the preference PREF and associated va
+                    lue VAL to the named preference group GRO
+                    OUP.
+unwrap              Unwrap radian phases by adding or subtrac
+                    ting multiples of 2*pi as appropriate to
+                    remove jumps greater than TOL.
+addtodate           Add Q amount of time (with units F) to th
+                    e serial datenum, D.
+>> 
+>> lookfor dir
+gzip                Compress the list of files and directorie
+                    s specified in FILES.
+OCTAVE_HOME         Return the name of the top-level Octave i
+                    nstallation directory.
+OCTAVE_EXEC_HOME    Return the name of the top-level Octave i
+                    nstallation directory for architecture-de
+                    ependent files.
+cd                  Change the current working directory to D
+                    IR.
+pwd                 Return the current working directory.
+readdir             Return the names of files in the director
+                    y DIR as a cell array of strings.
+rmdir               Remove the directory named DIR.
+filesep             Return the system-dependent character use
+                    d to separate directory names.
+pathsep             Query the character used to separate dire
+                    ctories in a path.
+confirm_recursive_rmdir Query or set the internal variable th
+                    at controls whether Octave will ask for c
+                    confirmation before recursively removing
+                    a directory tree.
+EXEC_PATH           Query or set the internal variable that s
+                    pecifies a colon separated list of direct
+                    tories to append to the shell PATH when e
+                    executing external programs.
+IMAGE_PATH          Query or set the internal variable that s
+                    pecifies a colon separated list of direct
+                    tories in which to search for image files
+                    s.
+P_tmpdir            Return the name of the host system’s *d
+                    efault* directory for temporary files.
+genpath             Return a path constructed from DIR and al
+                    l its subdirectories.
+rehash              Reinitialize Octave’s load path directo
+                    ry cache.
+addpath             Add named directories to the function sea
+                    rch path.
+rmpath              Remove DIR1, .
+S_ISDIR             Return true if MODE corresponds to a dire
+                    ctory.
+get_home_directory  Return the current home directory.
+file_in_loadpath    Return the absolute name of FILE if it ca
+                    n be found in the list of directories spe
+                    ecified by ‘path’.
+dir_in_loadpath     Return the absolute name of the loadpath 
+                    element matching DIR if it can be found i
+                    in the list of directories specified by
+                    ‘path’.
+exist               Check for the existence of NAME as a vari
+                    able, function, file, directory, or class
+                    s.
+uigetdir            Open a GUI dialog for selecting a directo
+                    ry.
+doc                 Display documentation for the function FU
+                    NCTION_NAME directly from an online versi
+                    ion of the printed manual, using the GNU
+                    Info browser.
+doc_cache_create    Generate documentation cache for all func
+                    tions in DIRECTORY.
+isdir               This function is not recommended.
+copyfile            Copy the source file(s) or directory F1 t
+                    o the destination F2.
+dir                 Display file listing for directory DIRECT
+                    ORY.
+fileparts           Return the directory, name, and extension
+                    components of FILENAME.
+isfolder            Return true if F is a directory and false
+                    otherwise.
+ls                  List directory contents.
+mkdir               Create a directory named DIRNAME in the d
+                    irectory PARENT, creating any intermediat
+                    te directories if necessary.
+movefile            Move the source file or directory F1 to t
+                    he destination F2.
+tar                 Pack the list of files and directories sp
+                    ecified in FILES into the TAR archive TAR
+                    RFILE.
+tempdir             Return the name of the host system’s di
+                    rectory for temporary files.
+unpack              Unpack the archive FILE based on its exte
+                    nsion to the directory DIR.
+what                List the Octave specific files in directo
+                    ry DIR.
+zip                 Compress the list of files and directorie
+                    s specified in FILES into the ZIP archive
+                    e ZIPFILE.
+matlabroot          Return the name of the top-level Octave i
+                    nstallation directory.
+rotate              Rotate the plot object H through ALPHA de
+                    grees around the line with direction DIRE
+                    ECTION and origin ORIGIN.
+prefdir             Return the directory that holds the prefe
+                    rences for Octave.
+rundemos            Execute built-in demos for all m-files in
+                    the specified DIRECTORY.
+runtests            Execute built-in tests for all m-files in
+                    the specified DIRECTORY.
+@ftp/cd             Get or set the remote directory on the FT
+                    P connection F.
+@ftp/dir            List the current directory in verbose for
+                    m for the FTP connection F.
+@ftp/mget           Download a remote file FILE or directory 
+                    DIR to the local directory on the FTP con
+                    nnection F.
+@ftp/mkdir          Create the remote directory PATH, over th
+                    e FTP connection F.
+@ftp/mput           Upload the local file FILE into the curre
+                    nt remote directory on the FTP connection
+                    n F.
+@ftp/rename         Rename or move the remote file or directo
+                    ry OLDNAME to NEWNAME, over the FTP conne
+                    ection F.
+@ftp/rmdir          Remove the remote directory PATH, over th
+                    e FTP connection F.
+>> lookfor d
+amd                 Return the approximate minimum degree per
+                    mutation of a matrix.
+audiodevinfo        Return a structure describing the availab
+                    le audio input and output devices.
+audioread           Read the audio file FILENAME and return t
+                    he audio data Y and sampling rate FS.
+audiowrite          Write audio data from the matrix Y to FIL
+                    ENAME at sampling rate FS with the file f
+                    format determined by the file extension.
+audioinfo           Return information about an audio file sp
+                    ecified by FILENAME.
+audioformats        Display information about all supported a
+                    udio formats.
+ccolamd             Constrained column approximate minimum de
+                    gree permutation.
+csymamd             For a symmetric positive definite matrix 
+                    S, return the permutation vector P such t
+                    that ‘S(P,P)’ tends to have a sparser
+                    r Cholesky factor than S.
+chol                Compute the upper Cholesky factor, R, of 
+                    the real symmetric or complex Hermitian p
+                    positive definite matrix A.
+cholinv             Compute the inverse of the symmetric posi
+                    tive definite matrix A using the Cholesky
+                    y factorization.
+chol2inv            Invert a symmetric, positive definite squ
+                    are matrix from its Cholesky decompositio
+                    on, U.
+cholupdate          Update or downdate a Cholesky factorizati
+                    on.
+cholinsert          Update a Cholesky factorization given a r
+                    ow or column to insert in the original fa
+                    actored matrix.
+choldelete          Update a Cholesky factorization given a r
+                    ow or column to delete from the original
+                    factored matrix.
+cholshift           Update a Cholesky factorization given a r
+                    ange of columns to shift in the original
+                    factored matrix.
+colamd              Compute the column approximate minimum de
+                    gree permutation.
+symamd              For a symmetric positive definite matrix 
+                    S, returns the permutation vector p such
+                    that ‘S(P, P)’ tends to have a spars
+                    ser Cholesky factor than S.
+dmperm              Perform a Dulmage-Mendelsohn permutation 
+                    of the sparse matrix S.
+fftw                Manage FFTW wisdom data.
+gzip                Compress the list of files and directorie
+                    s specified in FILES.
+bzip2               Compress the list of files specified in F
+                    ILES.
+qr                  Compute the QR factorization of A, using 
+                    standard LAPACK subroutines.
+qrupdate            Update a QR factorization given update ve
+                    ctors or matrices.
+qrinsert            Update a QR factorization given a row or 
+                    column to insert in the original factored
+                    d matrix.
+qrdelete            Update a QR factorization given a row or 
+                    column to delete from the original factor
+                    red matrix.
+qrshift             Update a QR factorization given a range o
+                    f columns to shift in the original factor
+                    red matrix.
+daspk_options       Query or set options for the function ‘
+                    daspk’.
+dasrt_options       Query or set options for the function ‘
+                    dasrt’.
+dassl_options       Query or set options for the function ‘
+                    dassl’.
+lsode_options       Query or set options for the function ‘
+                    lsode’.
+quad_options        Query or set options for the function ‘
+                    quad’.
+isguirunning        Return true if Octave is running in GUI m
+                    ode and false otherwise.
+argv                Return the command line arguments passed 
+                    to Octave.
+program_invocation_name Return the name that was typed at the
+                    shell prompt to run Octave.
+program_name        Return the last component of the value re
+                    turned by ‘program_invocation_name’.
+struct2cell         Create a new cell array from the objects 
+                    stored in the struct object.
+class               Return the class of the object OBJ, or cr
+                    eate a class with fields from structure S
+                    S and name (string) ID.
+ismethod            Return true if the string METHOD is a val
+                    id method of the object OBJ or of the cla
+                    ass CLSNAME.
+superiorto          When called from a class constructor, mar
+                    k the object currently constructed as hav
+                    ving a higher precedence than CLASS_NAME.
+                    .
+inferiorto          When called from a class constructor, mar
+                    k the object currently constructed as hav
+                    ving a lower precedence than CLASS_NAME.
+functions           Return a structure containing information
+                    about the function handle FCN_HANDLE.
+func2str            Return a string containing the name of th
+                    e function referenced by the function han
+                    ndle FCN_HANDLE.
+str2func            Return a function handle constructed from
+                    the string FCN_NAME.
+is_function_handle  Return true if X is a function handle.
+vectorize           Create a vectorized version of the inline
+                    function FUN by replacing all occurrence
+                    es of ‘*’, ‘/’, etc.
+javaMethod          Invoke the method METHODNAME on the Java 
+                    object OBJ with the arguments ARG1, .
+java_matrix_autoconversion Query or set the internal variable
+                    that controls whether Java arrays are au
+                    utomatically converted to Octave matrices
+                    s.
+java_unsigned_autoconversion Query or set the internal variab
+                    le that controls how integer classes are
+                    converted when ‘java_matrix_autoconver
+                    rsion’ is enabled.
+debug_java          Query or set the internal variable that d
+                    etermines whether extra debugging informa
+                    ation regarding the initialization of the
+                    e JVM and any Java exceptions is printed.
+                    .
+isnull              Return true if X is a special null matrix
+                    , string, or single quoted string.
+onCleanup           Create a special object that executes a g
+                    iven function upon destruction.
+struct              Create a scalar or array structure and in
+                    itialize its values.
+isfield             Return true if the X is a structure and i
+                    t includes an element named NAME.
+numfields           Return the number of fields of the struct
+                    ure S.
+rmfield             Return a _copy_ of the structure (array) 
+                    S with the field F removed.
+struct_levels_to_print Query or set the internal variable tha
+                    t specifies the number of structure level
+                    ls to display.
+optimize_subsasgn_calls Query or set the internal flag for �
+                    �subsasgn’ method call optimizations.
+isargout            Within a function, return a logical value
+                    indicating whether the argument K will b
+                    be assigned to a variable on output.
+double              Convert X to double precision type.
+uint8               Convert X to unsigned 8-bit integer type.
+uint16              Convert X to unsigned 16-bit integer type
+                    .
+uint32              Convert X to unsigned 32-bit integer type
+                    .
+uint64              Convert X to unsigned 64-bit integer type
+                    .
+subsref             Perform the subscripted element selection
+                    operation on VAL according to the subscr
+                    ript specified by IDX.
+subsasgn            Perform the subscripted assignment operat
+                    ion according to the subscript specified
+                    by IDX.
+is_sq_string        Return true if X is a single-quoted chara
+                    cter string.
+is_dq_string        Return true if X is a double-quoted chara
+                    cter string.
+disable_permutation_matrix Query or set the internal variable
+                    that controls whether permutation matric
+                    ces are stored in a special space-efficie
+                    ent format.
+disable_diagonal_matrix Query or set the internal variable th
+                    at controls whether diagonal matrices are
+                    e stored in a special space-efficient for
+                    rmat.
+disable_range       Query or set the internal variable that c
+                    ontrols whether ranges are stored in a sp
+                    pecial space-efficient format.
+iskeyword           Return true if NAME is an Octave keyword.
+autoload            Define FUNCTION to autoload from FILE.
+source              Parse and execute the contents of FILE.
+feval               Evaluate the function named NAME.
+builtin             Call the base function F even if F is ove
+                    rloaded to another function for the given
+                    n type signature.
+eval                Parse the string TRY and evaluate it as i
+                    f it were an Octave program.
+evalin              Like ‘eval’, except that the expressi
+                    ons are evaluated in the context CONTEXT,
+                    , which may be either "caller" or "base".
+                    .
+evalc               Parse and evaluate the string TRY as if i
+                    t were an Octave program, while capturing
+                    g the output into the return variable S.
+end                 Last element of an array or the end of an
+                    y ‘for’, ‘parfor’, ‘if’, ‘d
+                    do’, ‘while’, ‘function’, ‘sw
+                    witch’, ‘try’, or ‘unwind_protect
+                    t’ block.
+max_recursion_depth Query or set the internal limit on the nu
+                    mber of times a function may be called re
+                    ecursively.
+whos_line_format    Query or set the format string used by th
+                    e command ‘whos’.
+silent_functions    Query or set the internal variable that c
+                    ontrols whether internal output from a fu
+                    unction is suppressed.
+string_fill_char    Query or set the internal variable used t
+                    o pad all rows of a character matrix to t
+                    the same length.
+PS4                 Query or set the character string used to
+                    prefix output produced when echoing comm
+                    mands is enabled.
+echo                Control whether commands are displayed as
+                    they are executed.
+debug_jit           Query or set the internal variable that d
+                    etermines whether debugging/tracing is en
+                    nabled for Octave’s JIT compiler.
+jit_startcnt        Query or set the internal variable that d
+                    etermines whether JIT compilation will ta
+                    ake place for a specific loop.
+balance             Balance the matrix A to reduce numerical 
+                    errors in future calculations.
+besselj             Compute Bessel functions of the first kin
+                    d.
+bessely             Compute Bessel functions of the second ki
+                    nd.
+besseli             Compute modified Bessel functions of the 
+                    first kind.
+besselk             Compute modified Bessel functions of the 
+                    second kind.
+besselh             Compute Bessel functions of the third kin
+                    d (Hankel functions).
+airy                Compute Airy functions of the first and s
+                    econd kind, and their derivatives.
+bitand              Return the bitwise AND of non-negative in
+                    tegers.
+bitor               Return the bitwise OR of non-negative int
+                    egers X and Y.
+bitxor              Return the bitwise XOR of non-negative in
+                    tegers X and Y.
+bitshift            Return a K bit shift of N-digit unsigned 
+                    integers in A.
+flintmax            Return the largest integer that can be re
+                    presented consecutively in a floating poi
+                    int value.
+intmax              Return the largest integer that can be re
+                    presented by a specific integer type.
+intmin              Return the smallest integer that can be r
+                    epresented by a specific integer type.
+sizemax             Return the largest value allowed for the 
+                    size of an array.
+bsxfun              Apply a binary function F element-by-elem
+                    ent to two array arguments A and B, expan
+                    nding singleton dimensions in either inpu
+                    ut argument as necessary.
+max_stack_depth     Query or set the internal limit on the nu
+                    mber of times a function may be called re
+                    ecursively.
+who                 List currently defined variables matching
+                    the given patterns.
+whos                Provide detailed information on currently
+                    defined variables matching the given pat
+                    tterns.
+cellfun             Evaluate the function named NAME on the e
+                    lements of the cell array C.
+cellslices          Given an array X, this function produces 
+                    a cell array of slices from the array det
+                    termined by the index vectors LB, UB, for
+                    r lower and upper bounds, respectively.
+cellindexmat        Perform indexing of matrices in a cell ar
+                    ray.
+colloc              Compute derivative and integral weight ma
+                    trices for orthogonal collocation.
+conv2               Return the 2-D convolution of A and B.
+convn               Return the n-D convolution of A and B.
+daspk               Solve a set of differential-algebraic equ
+                    ations.
+dasrt               Solve a set of differential-algebraic equ
+                    ations.
+dassl               Solve a set of differential-algebraic equ
+                    ations.
+atan2               Compute atan (Y / X) for corresponding el
+                    ements of Y and X.
+hypot               Compute the element-by-element square roo
+                    t of the sum of the squares of X and Y.
+rem                 Return the remainder of the division ‘X
+                    / Y’.
+mod                 Compute the modulo of X and Y.
+cumprod             Cumulative product of elements along dime
+                    nsion DIM.
+cumsum              Cumulative sum of elements along dimensio
+                    n DIM.
+diag                Return a diagonal matrix with vector V on
+                    diagonal K.
+prod                Product of elements along dimension DIM.
+horzcat             Return the horizontal concatenation of N-
+                    D array objects, ARRAY1, ARRAY2, .
+vertcat             Return the vertical concatenation of N-D 
+                    array objects, ARRAY1, ARRAY2, .
+cat                 Return the concatenation of N-D array obj
+                    ects, ARRAY1, ARRAY2, .
+permute             Return the generalized transpose for an N
+                    -D array object A.
+ndims               Return the number of dimensions of A.
+size                Return a row vector with the size (number
+                    of elements) of each dimension for the o
+                    object A.
+size_equal          Return true if the dimensions of all argu
+                    ments agree.
+nzmax               Return the amount of storage allocated to
+                    the sparse matrix SM.
+sum                 Sum of elements along dimension DIM.
+sumsq               Sum of squares of elements along dimensio
+                    n DIM.
+iscomplex           Return true if X is a complex-valued nume
+                    ric object.
+isempty             Return true if A is an empty matrix (any 
+                    one of its dimensions is zero).
+ismatrix            Return true if A is a 2-D array, i.
+ones                Return a matrix or N-dimensional array wh
+                    ose elements are all 1.
+zeros               Return a matrix or N-dimensional array wh
+                    ose elements are all 0.
+Inf                 Return a scalar, matrix or N-dimensional 
+                    array whose elements are all equal to the
+                    e IEEE representation for positive infini
+                    ity.
+NaN                 Return a scalar, matrix, or N-dimensional
+                    array whose elements are all equal to th
+                    he IEEE symbol NaN (Not a Number).
+e                   Return a scalar, matrix, or N-dimensional
+                    array whose elements are all equal to th
+                    he base of natural logarithms.
+eps                 Return a scalar, matrix or N-dimensional 
+                    array whose elements are all eps, the mac
+                    chine precision.
+pi                  Return a scalar, matrix, or N-dimensional
+                    array whose elements are all equal to th
+                    he ratio of the circumference of a circle
+                    e to its diameter.
+realmax             Return a scalar, matrix, or N-dimensional
+                    array whose elements are all equal to th
+                    he largest floating point number that is
+                    representable.
+realmin             Return a scalar, matrix, or N-dimensional
+                    array whose elements are all equal to th
+                    he smallest normalized floating point num
+                    mber that is representable.
+I                   Return a scalar, matrix, or N-dimensional
+                    array whose elements are all equal to th
+                    he pure imaginary unit, defined as ‘sqr
+                    rt (-1)’.
+NA                  Return a scalar, matrix, or N-dimensional
+                    array whose elements are all equal to th
+                    he special constant used to designate mis
+                    ssing values.
+false               Return a matrix or N-dimensional array wh
+                    ose elements are all logical 0.
+true                Return a matrix or N-dimensional array wh
+                    ose elements are all logical 1.
+eye                 Return an identity matrix.
+linspace            Return a row vector with N linearly space
+                    d elements between START and END.
+reshape             Return a matrix with the specified dimens
+                    ions (M, N, .
+vec                 Return the vector obtained by stacking th
+                    e columns of the matrix X one above the o
+                    other.
+squeeze             Remove singleton dimensions from X and re
+                    turn the result.
+full                Return a full storage matrix from a spars
+                    e, diagonal, or permutation matrix, or a
+                    range.
+uplus               This function and + X are equivalent.
+uminus              This function and - X are equivalent.
+plus                This function and X + Y are equivalent.
+minus               This function and X - Y are equivalent.
+mtimes              Return the matrix multiplication product 
+                    of inputs.
+mrdivide            Return the matrix right division of X and
+                    Y.
+mpower              Return the matrix power operation of X ra
+                    ised to the Y power.
+mldivide            Return the matrix left division of X and 
+                    Y.
+times               Return the element-by-element multiplicat
+                    ion product of inputs.
+rdivide             Return the element-by-element right divis
+                    ion of X and Y.
+power               Return the element-by-element operation o
+                    f X raised to the Y power.
+ldivide             Return the element-by-element left divisi
+                    on of X and Y.
+and                 Return the logical AND of X and Y.
+or                  Return the logical OR of X and Y.
+colon               Return the result of the colon expression
+                    corresponding to BASE, LIMIT, and option
+                    nally, INCREMENT.
+toc                 Measure elapsed time on a wall-clock time
+                    r.
+cputime             Return the CPU time used by your Octave s
+                    ession.
+sort                Return a copy of X with the elements arra
+                    nged in increasing order.
+issorted            Return true if the array is sorted accord
+                    ing to MODE, which may be either "ascendi
+                    ing", "descending", or "either".
+nth_element         Select the n-th smallest element of a vec
+                    tor, using the ordering defined by ‘sor
+                    rt’.
+merge               Merge elements of TRUE_VAL and FALSE_VAL,
+                    depending on the value of MASK.
+diff                If X is a vector of length n, ‘diff (X)
+                    ’ is the vector of first differences X(
+                    (2) - X(1), .
+repelems            Construct a vector of repeated elements f
+                    rom X.
+base64_encode       Encode a double matrix or array X into th
+                    e base64 format string S.
+base64_decode       Decode the double matrix or array X from 
+                    the base64 encoded string S.
+dbstop              Set breakpoints for the built-in debugger
+                    .
+dbclear             Delete a breakpoint at line number LINE i
+                    n the function FUNC.
+dbstatus            Report the location of active breakpoints
+                    .
+dbwhere             In debugging mode, report the current fil
+                    e and line number where execution is stop
+                    pped.
+dbtype              Display a script file with line numbers.
+dblist              In debugging mode, list N lines of the fu
+                    nction being debugged centered around the
+                    e current line to be executed.
+dbstack             Display or return current debugging funct
+                    ion stack information.
+dbup                In debugging mode, move up the execution 
+                    stack N frames.
+dbdown              In debugging mode, move down the executio
+                    n stack N frames.
+dbstep              In debugging mode, execute the next N lin
+                    es of code.
+dbcont              Leave command-line debugging mode and con
+                    tinue code execution normally.
+dbquit              Quit debugging mode immediately without f
+                    urther code execution and return to the O
+                    Octave prompt.
+isdebugmode         Return true if in debugging mode, otherwi
+                    se false.
+OCTAVE_HOME         Return the name of the top-level Octave i
+                    nstallation directory.
+OCTAVE_EXEC_HOME    Return the name of the top-level Octave i
+                    nstallation directory for architecture-de
+                    ependent files.
+det                 Compute the determinant of A.
+cd                  Change the current working directory to D
+                    IR.
+pwd                 Return the current working directory.
+readdir             Return the names of files in the director
+                    y DIR as a cell array of strings.
+rmdir               Remove the directory named DIR.
+link                Create a new link (also known as a hard l
+                    ink) to an existing file.
+symlink             Create a symbolic link NEW which contains
+                    the string OLD.
+readlink            Read the value of the symbolic link SYMLI
+                    NK.
+rename              Change the name of file OLD to NEW.
+filesep             Return the system-dependent character use
+                    d to separate directory names.
+pathsep             Query the character used to separate dire
+                    ctories in a path.
+confirm_recursive_rmdir Query or set the internal variable th
+                    at controls whether Octave will ask for c
+                    confirmation before recursively removing
+                    a directory tree.
+have_window_system  Return true if a window system is availab
+                    le (X11, Windows, or Apple OS X) and fals
+                    se otherwise.
+dlmread             Read numeric data from the text file FILE
+                    which uses the delimiter SEP between dat
+                    ta values.
+dot                 Compute the dot product of two vectors.
+blkmm               Compute products of matrix blocks.
+eig                 Compute the eigenvalues (LAMBDA) and opti
+                    onally the right eigenvectors (V) and the
+                    e left eigenvectors (W) of a matrix or pa
+                    air of matrices.
+ellipj              Compute the Jacobi elliptic functions SN,
+                    CN, and DN of complex argument U and rea
+                    al parameter M.
+EDITOR              Query or set the internal variable that s
+                    pecifies the default text editor.
+EXEC_PATH           Query or set the internal variable that s
+                    pecifies a colon separated list of direct
+                    tories to append to the shell PATH when e
+                    executing external programs.
+IMAGE_PATH          Query or set the internal variable that s
+                    pecifies a colon separated list of direct
+                    tories in which to search for image files
+                    s.
+rethrow             Reissue a previous error as defined by ER
+                    R.
+error               Display an error message and stop m-file 
+                    execution.
+warning             Display a warning message or control the 
+                    behavior of Octave’s warning system.
+debug_on_error      Query or set the internal variable that c
+                    ontrols whether Octave will try to enter
+                    the debugger when an error is encountere
+                    ed.
+debug_on_warning    Query or set the internal variable that c
+                    ontrols whether Octave will try to enter
+                    the debugger when a warning is encounter
+                    red.
+fft                 Compute the discrete Fourier transform of
+                    X using a Fast Fourier Transform (FFT) a
+                    algorithm.
+ifft                Compute the inverse discrete Fourier tran
+                    sform of X using a Fast Fourier Transform
+                    m (FFT) algorithm.
+fft2                Compute the two-dimensional discrete Four
+                    ier transform of A using a Fast Fourier T
+                    Transform (FFT) algorithm.
+ifft2               Compute the inverse two-dimensional discr
+                    ete Fourier transform of A using a Fast F
+                    Fourier Transform (FFT) algorithm.
+fftn                Compute the N-dimensional discrete Fourie
+                    r transform of A using a Fast Fourier Tra
+                    ansform (FFT) algorithm.
+ifftn               Compute the inverse N-dimensional discret
+                    e Fourier transform of A using a Fast Fou
+                    urier Transform (FFT) algorithm.
+fclose              Close the file specified by the file desc
+                    riptor FID.
+fclear              Clear the stream state for the file speci
+                    fied by the file descriptor FID.
+fflush              Flush output to file descriptor FID.
+fgetl               Read characters from a file, stopping aft
+                    er a newline, or EOF, or LEN characters h
+                    have been read.
+fgets               Read characters from a file, stopping aft
+                    er a newline, or EOF, or LEN characters h
+                    have been read.
+fskipl              Read and skip COUNT lines from the file s
+                    pecified by the file descriptor FID.
+fopen               Open a file for low-level I/O or query op
+                    en files and file descriptors.
+freport             Print a list of which files have been ope
+                    ned, and whether they are open for readin
+                    ng, writing, or both.
+frewind             Move the file pointer to the beginning of
+                    the file specified by file descriptor FI
+                    ID.
+fseek               Set the file pointer to the location OFFS
+                    ET within the file FID.
+ftell               Return the position of the file pointer a
+                    s the number of characters from the begin
+                    nning of the file specified by file descr
+                    riptor FID.
+fprintf             This function is equivalent to ‘printf�
+                    ��, except that the output is written to
+                    the file descriptor FID instead of ‘st
+                    tdout’.
+printf              Print optional arguments under the contro
+                    l of the template string TEMPLATE to the
+                    stream ‘stdout’ and return the numbe
+                    er of characters printed.
+fputs               Write the string STRING to the file with 
+                    file descriptor FID.
+puts                Write a string to the standard output wit
+                    h no formatting.
+sprintf             This is like ‘printf’, except that th
+                    e output is returned as a string.
+fscanf              In the first form, read from FID accordin
+                    g to TEMPLATE, returning the result in th
+                    he matrix VAL.
+sscanf              This is like ‘fscanf’, except that th
+                    e characters are taken from the string ST
+                    TRING instead of from a stream.
+scanf               This is equivalent to calling ‘fscanf�
+                    � with FID = ‘stdin’.
+textscan            Read data from a text file or string.
+fread               Read binary data from the file specified 
+                    by the file descriptor FID.
+fwrite              Write data in binary form to the file spe
+                    cified by the file descriptor FID, return
+                    ning the number of values COUNT successfu
+                    ully written to the file.
+feof                Return 1 if an end-of-file condition has 
+                    been encountered for the file specified b
+                    by file descriptor FID and 0 otherwise.
+ferror              Query the error status of the stream spec
+                    ified by file descriptor FID.
+popen               Start a process and create a pipe.
+pclose              Close a file identifier that was opened b
+                    y ‘popen’.
+tmpfile             Return the file ID corresponding to a new
+                    temporary file with a unique name.
+mkstemp             Return the file descriptor FID correspond
+                    ing to a new temporary file with a unique
+                    e name created from TEMPLATE.
+P_tmpdir            Return the name of the host system’s *d
+                    efault* directory for temporary files.
+SEEK_END            Return the numerical value to pass to ‘
+                    fseek’ to position the file pointer rel
+                    lative to the end of the file.
+stdin               Return the numeric value corresponding to
+                    the standard input stream.
+stdout              Return the numeric value corresponding to
+                    the standard output stream.
+stderr              Return the numeric value corresponding to
+                    the standard error stream.
+filter              Apply a 1-D digital filter to the data X.
+find                Return a vector of indices of nonzero ele
+                    ments of a matrix, as a row if X is a row
+                    w vector or as a column otherwise.
+gcd                 Compute the greatest common divisor of A1
+                    , A2, .
+getgrent            Return an entry from the group database, 
+                    opening it if necessary.
+getgrgid            Return the first entry from the group dat
+                    abase with the group ID GID.
+getgrnam            Return the first entry from the group dat
+                    abase with the group name NAME.
+setgrent            Return the internal pointer to the beginn
+                    ing of the group database.
+endgrent            Close the group database.
+getpwent            Return a structure containing an entry fr
+                    om the password database, opening it if n
+                    necessary.
+getpwuid            Return a structure containing the first e
+                    ntry from the password database with the
+                    user ID UID.
+getpwnam            Return a structure containing the first e
+                    ntry from the password database with the
+                    user name NAME.
+setpwent            Return the internal pointer to the beginn
+                    ing of the password database.
+endpwent            Close the password database.
+ishghandle          Return true if H is a graphics handle and
+                    false otherwise.
+reset               Reset the properties of the graphic objec
+                    t H to their default values.
+set                 Set named property values for the graphic
+                    s handle (or vector of graphics handles)
+                    H.
+get                 Return the value of the named property P 
+                    from the graphics handle H.
+available_graphics_toolkits Return a cell array of registered
+                    graphics toolkits.
+loaded_graphics_toolkits Return a cell array of the currently
+                    loaded graphics toolkits.
+drawnow             Update figure windows and their children.
+addlistener         Register FCN as listener for the property
+                    PROP of the graphics object H.
+dellistener         Remove the registration of FCN as a liste
+                    ner for the property PROP of the graphics
+                    s object H.
+addproperty         Create a new property named NAME in graph
+                    ics object H.
+waitfor             Suspend the execution of the current prog
+                    ram until a condition is satisfied on the
+                    e graphics handle H.
+gsvd                Compute the generalized singular value de
+                    composition of (A, B).
+built_in_docstrings_file Query or set the internal variable t
+                    hat specifies the name of the file contai
+                    ining docstrings for built-in Octave func
+                    ctions.
+doc_cache_file      Query or set the internal variable that s
+                    pecifies the name of the Octave documenta
+                    ation cache file.
+makeinfo_program    Query or set the internal variable that s
+                    pecifies the name of the program that Oct
+                    tave runs to format help text containing
+                    Texinfo markup commands.
+suppress_verbose_help_message Query or set the internal varia
+                    ble that controls whether Octave will add
+                    d additional help information to the end
+                    of the output from the ‘help’ comman
+                    nd and usage messages for built-in comman
+                    nds.
+texi_macros_file    Query or set the internal variable that s
+                    pecifies the name of the file containing
+                    Texinfo macros that are prepended to doc
+                    cumentation strings before they are passe
+                    ed to makeinfo.
+hess                Compute the Hessenberg decomposition of t
+                    he matrix A.
+hex2num             Typecast a hexadecimal character array or
+                    cell array of strings to an array of num
+                    mbers.
+num2hex             Convert a numeric array to an array of he
+                    xadecimal strings.
+input               Print PROMPT and wait for user input.
+keyboard            Stop m-file execution and enter debug mod
+                    e.
+readline_read_init_file Read the readline library initializat
+                    ion file FILE.
+readline_re_read_init_file Re-read the last readline library 
+                    initialization file that was read.
+add_input_event_hook Add the named function or function handl
+                    e FCN to the list of functions to call pe
+                    eriodically when Octave is waiting for in
+                    nput.
+remove_input_event_hook Remove the named function or function
+                    handle with the given identifier from th
+                    he list of functions to call periodically
+                    y when Octave is waiting for input.
+PS2                 Query or set the secondary prompt string.
+completion_append_char Query or set the internal character va
+                    riable that is appended to successful com
+                    mmand-line completion attempts.
+atexit              Register a function to be called when Oct
+                    ave exits.
+kron                Form the Kronecker product of two or more
+                    matrices.
+genpath             Return a path constructed from DIR and al
+                    l its subdirectories.
+rehash              Reinitialize Octave’s load path directo
+                    ry cache.
+command_line_path   Return the command line path variable.
+restoredefaultpath  Restore Octave’s path to its initial st
+                    ate at startup.
+path                Modify or display Octave’s load path.
+addpath             Add named directories to the function sea
+                    rch path.
+rmpath              Remove DIR1, .
+load                Load the named variables V1, V2, .
+save                Save the named variables V1, V2, .
+crash_dumps_octave_core Query or set the internal variable th
+                    at controls whether Octave tries to save
+                    all current variables to the file ‘oct
+                    tave-workspace’ if it crashes or receiv
+                    ves a hangup, terminate or similar signal
+                    l.
+save_default_options Query or set the internal variable that 
+                    specifies the default options for the ‘
+                    �save’ command, and defines the default
+                    t format.
+octave_core_file_limit Query or set the internal variable tha
+                    t specifies the maximum amount of memory
+                    that Octave will save when writing a cra
+                    ash dump file.
+octave_core_file_name Query or set the internal variable that
+                    specifies the name of the file used for
+                    saving data from the top-level workspace
+                    e if Octave aborts.
+octave_core_file_options Query or set the internal variable t
+                    hat specifies the options used for saving
+                    g the workspace data if Octave aborts.
+save_header_format_string Query or set the internal variable 
+                    that specifies the format string used for
+                    r the comment line written at the beginni
+                    ing of text-format data files saved by Oc
+                    ctave.
+lookup              Lookup values in a *sorted* table.
+save_precision      Query or set the internal variable that s
+                    pecifies the number of digits to keep whe
+                    en saving data in text format.
+lsode               Ordinary Differential Equation (ODE) solv
+                    er.
+lu                  Compute the LU decomposition of A.
+luupdate            Given an LU factorization of a real or co
+                    mplex matrix A = L*U, L lower unit trapez
+                    zoidal and U upper trapezoidal, return th
+                    he LU factorization of A + X*Y.
+abs                 Compute the magnitude of Z.
+acos                Compute the inverse cosine in radians for
+                    each element of X.
+asin                Compute the inverse sine in radians for e
+                    ach element of X.
+atan                Compute the inverse tangent in radians fo
+                    r each element of X.
+cos                 Compute the cosine for each element of X 
+                    in radians.
+erfcx               Compute the scaled complementary error fu
+                    nction.
+dawson              Compute the Dawson (scaled imaginary erro
+                    r) function.
+expm1               Compute ‘exp (X) - 1’ accurately in t
+                    he neighborhood of zero.
+isfinite            Return a logical array which is true wher
+                    e the elements of X are finite values and
+                    d false where they are not.
+fix                 Truncate fractional portion of X and retu
+                    rn the integer portion.
+isalnum             Return a logical array which is true wher
+                    e the elements of S are letters or digits
+                    s and false where they are not.
+isalpha             Return a logical array which is true wher
+                    e the elements of S are letters and false
+                    e where they are not.
+isascii             Return a logical array which is true wher
+                    e the elements of S are ASCII characters
+                    (in the range 0 to 127 decimal) and fals
+                    se where they are not.
+iscntrl             Return a logical array which is true wher
+                    e the elements of S are control character
+                    rs and false where they are not.
+isdigit             Return a logical array which is true wher
+                    e the elements of S are decimal digits (0
+                    0-9) and false where they are not.
+isinf               Return a logical array which is true wher
+                    e the elements of X are infinite and fals
+                    se where they are not.
+isgraph             Return a logical array which is true wher
+                    e the elements of S are printable charact
+                    ters (but not the space character) and fa
+                    alse where they are not.
+islower             Return a logical array which is true wher
+                    e the elements of S are lowercase letters
+                    s and false where they are not.
+isna                Return a logical array which is true wher
+                    e the elements of X are NA (missing) valu
+                    ues and false where they are not.
+isnan               Return a logical array which is true wher
+                    e the elements of X are NaN values and fa
+                    alse where they are not.
+isprint             Return a logical array which is true wher
+                    e the elements of S are printable charact
+                    ters (including the space character) and
+                    false where they are not.
+ispunct             Return a logical array which is true wher
+                    e the elements of S are punctuation chara
+                    acters and false where they are not.
+isspace             Return a logical array which is true wher
+                    e the elements of S are whitespace charac
+                    cters (space, formfeed, newline, carriage
+                    e return, tab, and vertical tab) and fals
+                    se where they are not.
+isupper             Return a logical array which is true wher
+                    e the elements of S are uppercase letters
+                    s and false where they are not.
+isxdigit            Return a logical array which is true wher
+                    e the elements of S are hexadecimal digit
+                    ts (0-9 and a-fA-F).
+log1p               Compute ‘log (1 + X)’ accurately in t
+                    he neighborhood of zero.
+round               Return the integer nearest to X.
+roundb              Return the integer nearest to X.
+signbit             Return logical true if the value of X has
+                    its sign bit set and false otherwise.
+sin                 Compute the sine for each element of X in
+                    radians.
+tan                 Compute the tangent for each element of X
+                    in radians.
+tolower             Return a copy of the string or cell strin
+                    g S, with each uppercase character replac
+                    ced by the corresponding lowercase one; n
+                    non-alphabetic characters are left unchan
+                    nged.
+toupper             Return a copy of the string or cell strin
+                    g S, with each lowercase character replac
+                    ced by the corresponding uppercase one; n
+                    non-alphabetic characters are left unchan
+                    nged.
+matrix_type         Identify the matrix type or mark a matrix
+                    as a particular type.
+min                 Find minimum values in the array X.
+max                 Find maximum values in the array X.
+cummin              Return the cumulative minimum values alon
+                    g dimension DIM.
+cummax              Return the cumulative maximum values alon
+                    g dimension DIM.
+mgorth              Orthogonalize a given column vector X wit
+                    h respect to a set of orthonormal vectors
+                    s comprising the columns of V using the m
+                    modified Gram-Schmidt method.
+edit_history        Edit the history list using the editor na
+                    med by the variable ‘EDITOR’.
+history             If invoked with no arguments, ‘history�
+                    �� displays a list of commands that you h
+                    have executed.
+run_history         Run commands from the history list.
+history_control     Query or set the internal variable that s
+                    pecifies how commands are saved to the hi
+                    istory list.
+history_file        Query or set the internal variable that s
+                    pecifies the name of the file used to sto
+                    ore command history.
+history_save        Query or set the internal variable that c
+                    ontrols whether commands entered on the c
+                    command line are saved in the history fil
+                    le.
+openvar             Open the variable NAME in the graphical V
+                    ariable Editor.
+ordschur            Reorders the real Schur factorization (U,
+                    S) obtained with the ‘schur’ function
+                    n, so that selected eigenvalues appear in
+                    n the upper left diagonal blocks of the q
+                    quasi triangular Schur matrix.
+diary               Record a list of all commands _and_ the o
+                    utput they produce, mixed together just a
+                    as they appear on the terminal.
+terminal_size       Return a two-element row vector containin
+                    g the current size of the terminal window
+                    w in characters (rows and columns).
+page_output_immediately Query or set the internal variable th
+                    at controls whether Octave sends output t
+                    to the pager as soon as it is available.
+page_screen_output  Query or set the internal variable that c
+                    ontrols whether output intended for the t
+                    terminal window that is longer than one p
+                    page is sent through a pager.
+PAGER               Query or set the internal variable that s
+                    pecifies the program to use to display te
+                    erminal output on your system.
+pinv                Return the Moore-Penrose pseudoinverse of
+                    X.
+output_precision    Query or set the internal variable that s
+                    pecifies the minimum number of significan
+                    nt figures to display for numeric output.
+                    .
+rats                Convert X into a rational approximation r
+                    epresented as a string.
+disp                Display the value of X.
+fdisp               Display the value of X on the stream FID.
+display             Display the contents of the object OBJ pr
+                    epended by its name.
+format              Reset or specify the format of the output
+                    produced by ‘disp’ and Octave’s no
+                    ormal echoing mechanism.
+fixed_point_format  Query or set the internal variable that c
+                    ontrols whether Octave will use a scaled
+                    format to print matrix values.
+print_empty_dimensions Query or set the internal variable tha
+                    t controls whether the dimensions of empt
+                    ty matrices are printed along with the em
+                    mpty matrix symbol, ‘[]’.
+split_long_rows     Query or set the internal variable that c
+                    ontrols whether rows of a matrix may be s
+                    split when displayed to a terminal window
+                    w.
+quad                Numerically evaluate the integral of F fr
+                    om A to B using Fortran routines from QUA
+                    ADPACK.
+quadcc              Numerically evaluate the integral of F fr
+                    om A to B using doubly-adaptive Clenshaw-
+                    -Curtis quadrature.
+qz                  Compute the QZ decomposition of a general
+                    ized eigenvalue problem.
+rand                Return a matrix with random elements unif
+                    ormly distributed on the interval (0, 1).
+                    .
+randn               Return a matrix with normally distributed
+                    random elements having zero mean and var
+                    riance one.
+rande               Return a matrix with exponentially distri
+                    buted random elements.
+randg               Return a matrix with ‘gamma (A,1)’ di
+                    stributed random elements.
+randp               Return a matrix with Poisson distributed 
+                    random elements with mean value parameter
+                    r given by the first argument, L.
+randperm            Return a row vector containing a random p
+                    ermutation of ‘1:N’.
+rcond               Compute the 1-norm estimate of the recipr
+                    ocal condition number as returned by LAPA
+                    ACK.
+schur               Compute the Schur decomposition of A.
+SIG                 Return a structure containing Unix signal
+                    names and their defined values.
+debug_on_interrupt  Query or set the internal variable that c
+                    ontrols whether Octave will try to enter
+                    debugging mode when it receives an inter
+                    rrupt signal (typically generated with
+                    ��C-c’).
+sighup_dumps_octave_core Query or set the internal variable t
+                    hat controls whether Octave tries to save
+                    e all current variables to the file ‘oc
+                    ctave-workspace’ if it receives a hangu
+                    up signal.
+sigquit_dumps_octave_core Query or set the internal variable 
+                    that controls whether Octave tries to sav
+                    ve all current variables to the file ‘o
+                    octave-workspace’ if it receives a quit
+                    t signal.
+sigterm_dumps_octave_core Query or set the internal variable 
+                    that controls whether Octave tries to sav
+                    ve all current variables to the file ‘o
+                    octave-workspace’ if it receives a term
+                    minate signal.
+spalloc             Create an M-by-N sparse matrix with pre-a
+                    llocated space for at most NZ nonzero ele
+                    ements.
+spparms             Query or set the parameters used by the s
+                    parse solvers and factorization functions
+                    s.
+strfind             Search for PATTERN in the string STR and 
+                    return the starting index of every such o
+                    occurrence in the vector IDX.
+strrep              Replace all occurrences of the pattern PT
+                    N in the string STR with the string REP a
+                    and return the result.
+strcmp              Return 1 if the character strings S1 and 
+                    S2 are the same, and 0 otherwise.
+strncmp             Return 1 if the first N characters of str
+                    ings S1 and S2 are the same, and 0 otherw
+                    wise.
+strcmpi             Return 1 if the character strings S1 and 
+                    S2 are the same, disregarding case of alp
+                    phabetic characters, and 0 otherwise.
+strncmpi            Return 1 if the first N character of S1 a
+                    nd S2 are the same, disregarding case of
+                    alphabetic characters, and 0 otherwise.
+str2double          Convert a string to a real or complex num
+                    ber.
+unicode_idx         Return an array with the indices for each
+                    UTF-8 encoded character in STR.
+list_in_columns     Return a string containing the elements o
+                    f ARG listed in columns with an overall m
+                    maximum width of WIDTH and optional prefi
+                    ix PREFIX.
+sub2ind             Convert subscripts to linear indices.
+ind2sub             Convert linear indices to subscripts.
+svd                 Compute the singular value decomposition 
+                    of A.
+svd_driver          Query or set the underlying LAPACK driver
+                    used by ‘svd’.
+ignore_function_time_stamp Query or set the internal variable
+                    that controls whether Octave checks the
+                    time stamp on files each time it looks u
+                    up functions defined in function files.
+dup2                Duplicate a file descriptor.
+fcntl               Change the properties of the open file FI
+                    D.
+getpgrp             Return the process group id of the curren
+                    t process.
+getpid              Return the process id of the current proc
+                    ess.
+getppid             Return the process id of the parent proce
+                    ss.
+getegid             Return the effective group id of the curr
+                    ent process.
+getgid              Return the real group id of the current p
+                    rocess.
+geteuid             Return the effective user id of the curre
+                    nt process.
+getuid              Return the real user id of the current pr
+                    ocess.
+kill                Send signal SIG to process PID.
+mkfifo              Create a FIFO special file named NAME wit
+                    h file mode MODE.
+pipe                Create a pipe and return the reading and 
+                    writing ends of the pipe into READ_FD and
+                    d WRITE_FD respectively.
+stat                Return a structure INFO containing the fo
+                    llowing information about FILE or file id
+                    dentifier FID.
+S_ISREG             Return true if MODE corresponds to a regu
+                    lar file.
+S_ISDIR             Return true if MODE corresponds to a dire
+                    ctory.
+S_ISCHR             Return true if MODE corresponds to a char
+                    acter device.
+S_ISBLK             Return true if MODE corresponds to a bloc
+                    k device.
+S_ISFIFO            Return true if MODE corresponds to a fifo
+                    .
+S_ISLNK             Return true if MODE corresponds to a symb
+                    olic link.
+S_ISSOCK            Return true if MODE corresponds to a sock
+                    et.
+unlink              Delete the file named FILE.
+waitpid             Wait for process PID to terminate.
+WIFEXITED           Given STATUS from a call to ‘waitpid’
+                    , return true if the child terminated nor
+                    rmally.
+WEXITSTATUS         Given STATUS from a call to ‘waitpid’
+                    , return the exit status of the child.
+WIFSIGNALED         Given STATUS from a call to ‘waitpid’
+                    , return true if the child process was te
+                    erminated by a signal.
+WTERMSIG            Given STATUS from a call to ‘waitpid’
+                    , return the number of the signal that ca
+                    aused the child process to terminate.
+WCOREDUMP           Given STATUS from a call to ‘waitpid’
+                    , return true if the child produced a cor
+                    re dump.
+WIFSTOPPED          Given STATUS from a call to ‘waitpid’
+                    , return true if the child process was st
+                    topped by delivery of a signal.
+WSTOPSIG            Given STATUS from a call to ‘waitpid’
+                    , return the number of the signal which c
+                    caused the child to stop.
+WIFCONTINUED        Given STATUS from a call to ‘waitpid’
+                    , return true if the child process was re
+                    esumed by delivery of ‘SIGCONT’.
+F_DUPFD             Return the numerical value to pass to ‘
+                    fcntl’ to return a duplicate file descr
+                    riptor.
+F_GETFD             Return the numerical value to pass to ‘
+                    fcntl’ to return the file descriptor fl
+                    lags.
+F_SETFD             Return the numerical value to pass to ‘
+                    fcntl’ to set the file descriptor flags
+                    s.
+O_APPEND            Return the numerical value of the ‘O_AP
+                    PEND’ macro.
+O_RDONLY            Return the numerical value of the ‘O_RD
+                    ONLY’.
+O_RDWR              Return the numerical value of the ‘O_RD
+                    WR’.
+WUNTRACED           Return the numerical value of the ‘WUNT
+                    RACED’ macro.
+clc                 Clear the terminal screen and move the cu
+                    rsor to the upper left corner.
+unsetenv            Delete the environment variable VAR.
+winqueryreg         Query names or value from the Windows reg
+                    istry.
+kbhit               Read a single keystroke from the keyboard
+                    .
+pause               Suspend the execution of the program or c
+                    hange the state of the pause function.
+isieee              Return true if your computer _claims_ to 
+                    conform to the IEEE standard for floating
+                    g point calculations.
+tilde_expand        Perform tilde expansion on STRING.
+get_home_directory  Return the current home directory.
+time                Return the current time as the number of 
+                    seconds since the epoch.
+gmtime              Given a value returned from ‘time’, o
+                    r any non-negative integer, return a time
+                    e structure corresponding to UTC (Coordin
+                    nated Universal Time).
+localtime           Given a value returned from ‘time’, o
+                    r any non-negative integer, return a time
+                    e structure corresponding to the local ti
+                    ime zone.
+mktime              Convert a time structure corresponding to
+                    the local time to the number of seconds
+                    since the epoch.
+strptime            Convert the string STR to the time struct
+                    ure TM_STRUCT under the control of the fo
+                    ormat string FMT.
+warranty            Describe the conditions for copying and d
+                    istributing Octave.
+system              Execute a shell command specified by STRI
+                    NG.
+tril                Return a new matrix formed by extracting 
+                    the lower triangular part of the matrix A
+                    A, and setting all other elements to zero
+                    o.
+triu                Return a new matrix formed by extracting 
+                    the upper triangular part of the matrix A
+                    A, and setting all other elements to zero
+                    o.
+tsearch             Search for the enclosing Delaunay convex 
+                    hull.
+typecast            Return a new array Y resulting from inter
+                    preting the data of X in memory as data o
+                    of the numeric class CLASS.
+bitpack             Return a new array Y resulting from inter
+                    preting the logical array X as raw bit pa
+                    atterns for data of the numeric class CLA
+                    ASS.
+bitunpack           Return a logical array Y corresponding to
+                    the raw bit patterns of X.
+urlwrite            Download a remote file specified by its U
+                    RL and save it as LOCALFILE.
+urlread             Download a remote file specified by its U
+                    RL and return its content in string S.
+isvarname           Return true if NAME is a valid variable n
+                    ame.
+file_in_loadpath    Return the absolute name of FILE if it ca
+                    n be found in the list of directories spe
+                    ecified by ‘path’.
+file_in_path        Return the absolute name of FILE if it ca
+                    n be found in PATH.
+do_string_escapes   Convert escape sequences in STRING to the
+                    characters they represent.
+undo_string_escapes Convert special characters in strings bac
+                    k to their escaped forms.
+is_rooted_relative_filename Return true if FILE is a rooted-r
+                    elative filename.
+dir_in_loadpath     Return the absolute name of the loadpath 
+                    element matching DIR if it can be found i
+                    in the list of directories specified by
+                    ‘path’.
+errno               Query or set the system-dependent variabl
+                    e errno.
+errno_list          Return a structure containing the system-
+                    dependent errno values.
+isindex             Return true if IND is a valid index.
+isstudent           Return true if running in the student edi
+                    tion of MATLAB.
+exist               Check for the existence of NAME as a vari
+                    able, function, file, directory, or class
+                    s.
+mlock               Lock the current function into memory so 
+                    that it can’t be removed with ‘clear�
+                    ’.
+munlock             Unlock the named function FCN so that it 
+                    may be removed from memory with ‘clear�
+                    ’.
+mislocked           Return true if the named function FCN is 
+                    locked in memory.
+clear               Delete the names matching the given PATTE
+                    RNs from the symbol table.
+missing_function_hook Query or set the internal variable that
+                    specifies the function to call when an u
+                    unknown identifier is requested.
+"                   String delimiter.
+&                   Element by element logical ’and’ oper
+                    ator.
+&&                  Logical ’and’ operator (with short-ci
+                    rcuit evaluation).
+’                 Matrix transpose operator or string delim
+                    iter.
+(                   Array index or function argument delimite
+                    r.
+)                   Array index or function argument delimite
+                    r.
++                   Addition operator.
+,                   Array index, function argument, or comman
+                    d separator.
+–                 Decrement operator.
+./                  Element by element right division operato
+                    r.
+/                   Right division operator.
+.\                  Element by element left division operator
+                    .
+\                   Left division operator.
+;                   Array row or command separator.
+[                   Return list delimiter.
+]                   Return list delimiter.
+@                   Return handle to a function.
+break               Exit the innermost enclosing do, while, o
+                    r for loop.
+classdef            Begin a classdef block.
+continue            Jump to the end of the innermost enclosin
+                    g do, while, or for loop.
+do                  Begin a do-until loop.
+elseif              Alternate conditional test for an if bloc
+                    k.
+end_try_catch       Mark the end of a ‘try-catch’ block.
+end_unwind_protect  Mark the end of an unwind_protect block.
+endclassdef         Mark the end of a classdef definition.
+endenumeration      Mark the end of an enumeration block in a
+                    classdef definition.
+endevents           Mark the end of an events block in a clas
+                    sdef definition.
+endfor              Mark the end of a for loop.
+endfunction         Mark the end of a function.
+endif               Mark the end of an if block.
+endmethods          Mark the end of a methods block in a clas
+                    sdef definition.
+endparfor           Mark the end of a parfor loop.
+endproperties       Mark the end of a properties block in a c
+                    lassdef definition.
+endswitch           Mark the end of a switch block.
+endwhile            Mark the end of a while loop.
+enumeration         Begin an enumeration block in a classdef 
+                    definition.
+events              Begin an events block in a classdef defin
+                    ition.
+function            Begin a function body with name ‘functi
+                    on_name’, with OUTPUTS as results, and
+                    with INPUTS as parameters.
+global              Declare variables to have global scope.
+otherwise           The default statement in a switch block w
+                    hich is executed when no other case state
+                    ements match the input.
+persistent          Declare variables as persistent.
+properties          Begin a properties block in a classdef de
+                    finition.
+until               End a do-until loop.
+unwind_protect      Begin an unwind_protect block.
+unwind_protect_cleanup Begin the cleanup section of an unwind
+                    _protect block.
+matlab.lang.makeValidName Create valid variable name VARNAME 
+                    from STR.
+lin2mu              Convert audio data from linear to mu-law.
+mu2lin              Convert audio data from mu-law to linear.
+record              Record SEC seconds of audio from the syst
+                    em’s default audio input at a sampling
+                    rate of 8000 samples per second.
+sound               Play audio data Y at sample rate FS to th
+                    e default audio device.
+soundsc             Scale the audio data Y and play it at sam
+                    ple rate FS to the default audio device.
+@audioplayer/audioplayer Create an audioplayer object that wi
+                    ll play back data Y at sample rate FS.
+@audioplayer/disp   Display the properties of the audioplayer
+                    object PLAYER.
+@audioplayer/get    Return the VALUE of the property identifi
+                    ed by NAME.
+@audioplayer/isplaying Return true if the audioplayer object 
+                    PLAYER is currently playing back audio an
+                    nd false otherwise.
+@audioplayer/pause  Pause the audioplayer PLAYER.
+@audioplayer/play   Play audio stored in the audioplayer obje
+                    ct PLAYER without blocking.
+@audioplayer/playblocking Play audio stored in the audioplaye
+                    r object PLAYER with blocking.
+@audioplayer/resume Resume playback for the paused audioplaye
+                    r object PLAYER.
+@audioplayer/set    Set the value of property specified by NA
+                    ME to a given VALUE.
+@audioplayer/stop   Stop the playback for the audioplayer PLA
+                    YER and reset the relevant variables to t
+                    their starting values.
+@audioplayer/subsasgn Perform subscripted assignment on the a
+                    udio player object PLAYER.
+@audioplayer/subsref Perform subscripted selection on the aud
+                    io player object PLAYER.
+@audiorecorder/audiorecorder Create an audiorecorder object r
+                    ecording 8 bit mono audio at 8000 Hz samp
+                    ple rate.
+@audiorecorder/disp Display the properties of the audiorecord
+                    er object RECORDER.
+@audiorecorder/get  Return the VALUE of the property identifi
+                    ed by NAME.
+@audiorecorder/getaudiodata Return recorder audio data as a m
+                    atrix with values between -1.
+@audiorecorder/getplayer Return an audioplayer object with da
+                    ta recorded by the audiorecorder object R
+                    RECORDER.
+@audiorecorder/isrecording Return true if the audiorecorder o
+                    bject RECORDER is currently recording aud
+                    dio and false otherwise.
+@audiorecorder/pause Pause recording with audiorecorder objec
+                    t RECORDER.
+@audiorecorder/play Play the audio recorded in RECORDER and r
+                    eturn a corresponding audioplayer object.
+                    .
+@audiorecorder/record Record audio without blocking using the
+                    audiorecorder object RECORDER until stop
+                    pped or paused by the STOP or PAUSE metho
+                    od.
+@audiorecorder/recordblocking Record audio with blocking (syn
+                    chronous I/O).
+@audiorecorder/resume Resume recording with the paused audior
+                    ecorder object RECORDER.
+@audiorecorder/set  Set the value of property specified by NA
+                    ME to a given VALUE.
+@audiorecorder/stop Stop the audiorecorder object RECORDER an
+                    d clean up any audio streams.
+@audiorecorder/subsasgn Perform subscripted assignment on the
+                    audio recorder object RECORDER.
+@audiorecorder/subsref Perform subscripted selection on the a
+                    udio recorder object RECORDER.
+chop                ‘chop’ is deprecated and will be remo
+                    ved in Octave version 6.
+comma               Array index, function argument, or comman
+                    d separator.
+desktop             ‘desktop’ is deprecated and will be r
+                    emoved in Octave version 6.
+java2mat            ‘java2mat’ is deprecated and will be 
+                    removed in Octave version 6.
+output_max_field_width ‘output_max_field_width’ is deprec
+                    ated and will be removed in Octave versio
+                    on 7.
+paren               Array index or function argument delimete
+                    r.
+semicolon           Array row or command separator.
+tmpnam              ‘tmpnam’ is deprecated and will be re
+                    moved in Octave version 6.
+toascii             ‘toascii’ is deprecated and will be r
+                    emoved in Octave version 6.
+acosd               Compute the inverse cosine in degrees for
+                    each element of X.
+acot                Compute the inverse cotangent in radians 
+                    for each element of X.
+acotd               Compute the inverse cotangent in degrees 
+                    for each element of X.
+acsc                Compute the inverse cosecant in radians f
+                    or each element of X.
+acscd               Compute the inverse cosecant in degrees f
+                    or each element of X.
+asec                Compute the inverse secant in radians for
+                    each element of X.
+asecd               Compute the inverse secant in degrees for
+                    each element of X.
+asind               Compute the inverse sine in degrees for e
+                    ach element of X.
+atan2d              Compute atan (Y / X) in degrees for corre
+                    sponding elements from Y and X.
+atand               Compute the inverse tangent in degrees fo
+                    r each element of X.
+cosd                Compute the cosine for each element of X 
+                    in degrees.
+cot                 Compute the cotangent for each element of
+                    X in radians.
+cotd                Compute the cotangent for each element of
+                    X in degrees.
+csc                 Compute the cosecant for each element of 
+                    X in radians.
+cscd                Compute the cosecant for each element of 
+                    X in degrees.
+sec                 Compute the secant for each element of X 
+                    in radians.
+secd                Compute the secant for each element of X 
+                    in degrees.
+sind                Compute the sine for each element of X in
+                    degrees.
+tand                Compute the tangent for each element of X
+                    in degrees.
+accumarray          Create an array by accumulating the eleme
+                    nts of a vector into the positions define
+                    ed by their subscripts.
+accumdim            Create an array by accumulating the slice
+                    s of an array into the positions defined
+                    by their subscripts along a specified di
+                    imension.
+bincoeff            Return the binomial coefficient of N and 
+                    K.
+bitget              Return the status of bit(s) N of the unsi
+                    gned integers in A.
+bitset              Set or reset bit(s) N of the unsigned int
+                    egers in A.
+blkdiag             Build a block diagonal matrix from A, B, 
+                    C, .
+cart2pol            Transform Cartesian coordinates to polar 
+                    or cylindrical coordinates.
+cart2sph            Transform Cartesian coordinates to spheri
+                    cal coordinates.
+celldisp            Recursively display the contents of a cel
+                    l array.
+common_size         Determine if all input arguments are eith
+                    er scalar or of common size.
+cplxpair            Sort the numbers Z into complex conjugate
+                    pairs ordered by increasing real part.
+cumtrapz            Cumulative numerical integration of point
+                    s Y using the trapezoidal method.
+curl                Calculate curl of vector field given by t
+                    he arrays FX, FY, and FZ or FX, FY respec
+                    ctively.
+dblquad             Numerically evaluate the double integral 
+                    of F.
+deal                Copy the input parameters into the corres
+                    ponding output parameters.
+deg2rad             Convert degrees to radians.
+del2                Calculate the discrete Laplace operator.
+divergence          Calculate divergence of a vector field gi
+                    ven by the arrays FX, FY, and FZ or FX, F
+                    FY respectively.
+flip                Return a copy of array X flipped across d
+                    imension DIM.
+flipud              Flip array upside down.
+gradient            Calculate the gradient of sampled data or
+                    a function.
+idivide             Integer division with different rounding 
+                    rules.
+integral            Numerically evaluate the integral of F fr
+                    om A to B using adaptive quadrature.
+integral2           Numerically evaluate the two-dimensional 
+                    integral of F using adaptive quadrature o
+                    over the two-dimensional domain defined b
+                    by XA, XB, YA, YB (scalars may be finite
+                    or infinite).
+integral3           Numerically evaluate the three-dimensiona
+                    l integral of F using adaptive quadrature
+                    e over the three-dimensional domain defin
+                    ned by XA, XB, YA, YB, ZA, ZB (scalars ma
+                    ay be finite or infinite).
+interp1             One-dimensional interpolation.
+interp2             Two-dimensional interpolation.
+interp3             Three-dimensional interpolation.
+interpn             Perform N-dimensional interpolation, wher
+                    e N is at least two.
+logspace            Return a row vector with N elements logar
+                    ithmically spaced from 10^A to 10^B.
+pol2cart            Transform polar or cylindrical coordinate
+                    s to Cartesian coordinates.
+polyarea            Determine area of a polygon by triangle m
+                    ethod.
+postpad             Append the scalar value C to the vector X
+                    until it is of length L.
+prepad              Prepend the scalar value C to the vector 
+                    X until it is of length L.
+quad2d              Numerically evaluate the two-dimensional 
+                    integral of F using adaptive quadrature o
+                    over the two-dimensional domain defined b
+                    by XA, XB, YA, YB using tiled integration
+                    n.
+quadgk              Numerically evaluate the integral of F fr
+                    om A to B using adaptive Gauss-Konrod qua
+                    adrature.
+quadl               Numerically evaluate the integral of F fr
+                    om A to B using an adaptive Lobatto rule.
+                    .
+quadv               Numerically evaluate the integral of F fr
+                    om A to B using an adaptive Simpson’s r
+                    rule.
+rad2deg             Convert radians to degrees.
+randi               Return random integers in the range 1:IMA
+                    X.
+rat                 Find a rational approximation of X to wit
+                    hin the tolerance defined by TOL.
+repelem             Construct an array of repeated elements f
+                    rom X and repeat instructions R_1, .
+repmat              Repeat matrix or N-D array.
+rot90               Rotate array by 90 degree increments.
+rotdim              Return a copy of X with the elements rota
+                    ted counterclockwise in 90-degree increme
+                    ents.
+shiftdim            Shift the dimensions of X by N, where N m
+                    ust be an integer scalar.
+sortrows            Sort the rows of the matrix A according t
+                    o the order of the columns specified in C
+                    C.
+sph2cart            Transform spherical coordinates to Cartes
+                    ian coordinates.
+structfun           Evaluate the function named NAME on the f
+                    ields of the structure S.
+subsindex           Convert an object to an index vector.
+trapz               Numerically evaluate the integral of poin
+                    ts Y using the trapezoidal method.
+triplequad          Numerically evaluate the triple integral 
+                    of F.
+xor                 Return the “exclusive or” of X and Y.
+convhull            Compute the convex hull of a 2-D or 3-D s
+                    et of points.
+delaunay            Compute the Delaunay triangulation for a 
+                    2-D or 3-D set of points.
+delaunayn           Compute the Delaunay triangulation for an
+                    N-dimensional set of points.
+dsearch             Return the index IDX of the closest point
+                    in ‘X, Y’ to the elements ‘[XI(:),
+                    , YI(:)]’.
+dsearchn            Return the index IDX of the closest point
+                    in X to the elements XI.
+griddata            Generate a regular mesh from irregular da
+                    ta using interpolation.
+griddata3           Generate a regular mesh from irregular da
+                    ta using interpolation.
+griddatan           Generate a regular mesh from irregular da
+                    ta using interpolation.
+inpolygon           For a polygon defined by vertex points �
+                    �(XV, YV)’, return true if the points
+                    ‘(X, Y)’ are inside (or on the bounda
+                    ary) of the polygon; Otherwise, return fa
+                    alse.
+rectint             Compute area or volume of intersection of
+                    rectangles or N-D boxes.
+tsearchn            Search for the enclosing Delaunay convex 
+                    hull.
+voronoi             Plot the Voronoi diagram of points ‘(X,
+                    Y)’.
+voronoin            Compute N-dimensional Voronoi facets.
+dialog              Create an empty modal dialog window to wh
+                    ich other uicontrols can be added.
+errordlg            Display an error dialog box with error me
+                    ssage MSG and caption TITLE.
+getappdata          Return the VALUE of the application data 
+                    NAME for the graphics object with handle
+                    H.
+guidata             Query or set user-custom GUI data.
+guihandles          Return a structure of object handles for 
+                    the figure associated with handle H.
+helpdlg             Display a help dialog box with help messa
+                    ge MSG and caption TITLE.
+inputdlg            Return user input from a multi-textfield 
+                    dialog box in a cell array of strings, or
+                    r an empty cell array if the dialog is cl
+                    losed by the Cancel button.
+isappdata           Return true if the named application data
+                    , NAME, exists for the graphics object wi
+                    ith handle H.
+listdlg             Return user inputs from a list dialog box
+                    in a vector of selection indices (SEL) a
+                    and a flag indicating how the user closed
+                    d the dialog box (OK).
+movegui             Move a figure specified by figure handle 
+                    H to a position on the screen defined by
+                    POS.
+msgbox              Display MSG using a message dialog box.
+questdlg            Display MSG using a question dialog box a
+                    nd return the caption of the activated bu
+                    utton.
+rmappdata           Delete the application data NAME from the
+                    graphics object with handle H.
+setappdata          Set the application data NAME to VALUE fo
+                    r the graphics object with handle H.
+uibuttongroup       Create a uibuttongroup object and return 
+                    a handle to it.
+uicontextmenu       Create a uicontextmenu object and return 
+                    a handle to it.
+uicontrol           Create a uicontrol object and return a ha
+                    ndle to it.
+uigetdir            Open a GUI dialog for selecting a directo
+                    ry.
+uigetfile           Open a GUI dialog for selecting a file an
+                    d return the filename FNAME, the path to
+                    this file FPATH, and the filter index FL
+                    LTIDX.
+uimenu              Create a uimenu object and return a handl
+                    e to it.
+uiputfile           Open a GUI dialog for selecting a file.
+uiresume            Resume program execution suspended with �
+                    ��uiwait’.
+uitable             Create a uitable object and return a hand
+                    le to it.
+uiwait              Suspend program execution until the figur
+                    e with handle H is deleted or ‘uiresume
+                    e’ is called.
+waitbar             Return a handle H to a new progress indic
+                    ator ("waitbar") object.
+waitforbuttonpress  Wait for mouse click or key press over th
+                    e current figure window.
+warndlg             Display a warning dialog box with warning
+                    message MSG and caption TITLE.
+ans                 The most recently computed result that wa
+                    s not explicitly assigned to a variable.
+bessel              Compute Bessel or Hankel functions of var
+                    ious kinds.
+debug               Summary of debugging commands.
+doc                 Display documentation for the function FU
+                    NCTION_NAME directly from an online versi
+                    ion of the printed manual, using the GNU
+                    Info browser.
+doc_cache_create    Generate documentation cache for all func
+                    tions in DIRECTORY.
+error_ids           ‘Octave:invalid-context’  Indicates t
+                    he error was generated by an operation th
+                    hat cannot be executed in the scope from
+                    which it was called.
+help                Display the help text for NAME.
+lookfor             Search for the string STR in the document
+                    ation of all functions in the current fun
+                    nction search path.
+slash               Backslash and slash perform various sorts
+                    of division.
+type                Display the contents of NAME which may be
+                    a file, function (m-file), variable, ope
+                    erator, or keyword.
+warning_ids         ‘Octave:abbreviated-property-match’  
+                    By default, the ‘Octave:abbreviated-pro
+                    operty-match’ warning is enabled.
+which               Display the type of each NAME.
+brighten            Brighten or darken a colormap.
+cmpermute           Reorder colors in a colormap.
+cmunique            Convert an input image X to an ouput inde
+                    xed image Y which uses the smallest color
+                    rmap possible NEWMAP.
+frame2im            Convert movie frame to indexed image.
+gray2ind            Convert a grayscale or binary intensity i
+                    mage to an indexed image.
+im2double           Convert image to double precision.
+image               Display a matrix as an indexed color imag
+                    e.
+imagesc             Display a scaled version of the matrix IM
+                    G as a color image.
+imfinfo             Read image information from a file.
+imformats           Manage supported image formats.
+imread              Read images from various file formats.
+imshow              Display the image IM, where IM can be a 2
+                    -dimensional (grayscale image) or a 3-dim
+                    mensional (RGB image) matrix.
+ind2gray            Convert a color indexed image to a graysc
+                    ale intensity image.
+ind2rgb             Convert an indexed image to red, green, a
+                    nd blue color components.
+movie               Play a movie defined by an array of frame
+                    structures.
+rgb2gray            Transform an image or colormap from red-g
+                    reen-blue (RGB) color space to a grayscal
+                    le intensity image.
+rgb2ind             Convert an image in red-green-blue (RGB) 
+                    color space to an indexed image.
+spinmap             Cycle the colormap for T seconds with a c
+                    olor increment of INC.
+viridis             Create color colormap.
+beep                Produce a beep from the speaker (or visua
+                    l bell).
+csvread             Read the comma-separated-value (CSV) file
+                    FILENAME into the matrix X.
+csvwrite            Write the numeric matrix X to the file FI
+                    LENAME in comma-separated-value (CSV) for
+                    rmat.
+dlmwrite            Write the numeric matrix M to the text fi
+                    le FILE using a delimiter.
+fileread            Read the contents of FILENAME and return 
+                    it as a string.
+importdata          Import data from the file FNAME.
+is_valid_file_id    Return true if FID refers to an open file
+                    .
+java_get            Get the value of the field NAME of the Ja
+                    va object OBJ.
+java_set            Set the value of the field NAME of the Ja
+                    va object OBJ to VAL.
+javaaddpath         Add CLSPATH to the dynamic class path of 
+                    the Java virtual machine.
+javamem             Show the current memory usage of the Java
+                    virtual machine (JVM) and run the garbag
+                    ge collector.
+javarmpath          Remove CLSPATH from the dynamic class pat
+                    h of the Java virtual machine.
+findstr             This function is obsolete.
+flipdim             This function is obsolete.
+isdir               This function is not recommended.
+strread             This function is obsolete.
+textread            This function is obsolete.
+bandwidth           Compute the bandwidth of A.
+cond                Compute the P-norm condition number of a 
+                    matrix with respect to inversion.
+condeig             Compute condition numbers of a matrix wit
+                    h respect to eigenvalues.
+condest             Estimate the 1-norm condition number of a
+                    square matrix A using T test vectors and
+                    d a randomized 1-norm estimator.
+cross               Compute the vector cross product of two 3
+                    -dimensional vectors X and Y.
+duplication_matrix  Return the duplication matrix Dn which is
+                    the unique n^2 by n*(n+1)/2 matrix such
+                    that Dn vech (A) = vec (A) for all symme
+                    etric n by n matrices A.
+gls                 Generalized least squares (GLS) model.
+housh               Compute Householder reflection vector HOU
+                    SV to reflect X to be the j-th column of
+                    identity, i.
+isbanded            Return true if A is a matrix with entries
+                    confined between LOWER diagonals below t
+                    the main diagonal and UPPER diagonals abo
+                    ove the main diagonal.
+isdefinite          Return true if A is symmetric positive de
+                    finite matrix within the tolerance specif
+                    fied by TOL.
+isdiag              Return true if A is a diagonal matrix.
+ishermitian         Return true if A is a Hermitian or skew-H
+                    ermitian matrix within the tolerance spec
+                    cified by TOL.
+issymmetric         Return true if A is a symmetric or skew-s
+                    ymmetric matrix within the tolerance spec
+                    cified by TOL.
+lscov               Compute a generalized linear least square
+                    s fit.
+ols                 Ordinary least squares (OLS) estimation.
+ordeig              Return the eigenvalues of quasi-triangula
+                    r matrices in their order of appearance i
+                    in the matrix A.
+qzhess              Compute the Hessenberg-triangular decompo
+                    sition of the matrix pencil ‘(A, B)’,
+                    , returning ‘AA = Q * A * Z’, ‘BB =
+                    = Q * B * Z’, with Q and Z orthogonal.
+rank                Compute the rank of matrix A, using the s
+                    ingular value decomposition.
+rref                Return the reduced row echelon form of A.
+subspace            Determine the largest principal angle bet
+                    ween two subspaces spanned by the columns
+                    s of matrices A and B.
+trace               Compute the trace of A, the sum of the el
+                    ements along the main diagonal.
+vech                Return the vector obtained by eliminating
+                    all superdiagonal elements of the square
+                    e matrix X and stacking the result one co
+                    olumn above the other.
+vecnorm             Return the p-norm of the elements of A al
+                    ong dimension DIM.
+bug_report          Display information about how to submit b
+                    ug reports for Octave.
+cast                Convert VAL to data type TYPE.
+citation            Display instructions for citing GNU Octav
+                    e or its packages in publications.
+clearvars           Delete the variables matching the given P
+                    ATTERNs from memory.
+computer            Print or return a string of the form CPU-
+                    VENDOR-OS that identifies the type of com
+                    mputer that Octave is running on.
+copyfile            Copy the source file(s) or directory F1 t
+                    o the destination F2.
+delete              Delete the named file or graphics handle.
+dir                 Display file listing for directory DIRECT
+                    ORY.
+dos                 Execute a system command if running under
+                    a Windows-like operating system, otherwi
+                    ise do nothing.
+edit                Edit the named function, or change editor
+                    settings.
+fact                Display an amazing and random fact about 
+                    the world’s greatest hacker.
+fieldnames          Return a cell array of strings with the n
+                    ames of the fields in the specified input
+                    t.
+fileparts           Return the directory, name, and extension
+                    components of FILENAME.
+fullfile            Build complete filename from separate par
+                    ts.
+getfield            Get the value of the field named FIELD fr
+                    om a structure or nested structure S.
+grabcode            Grab the code from a report created by th
+                    e ‘publish’ function.
+info                Display contact information for the GNU O
+                    ctave community.
+isdeployed          Return true if the current program has be
+                    en compiled and is running separately fro
+                    om the Octave interpreter and false if it
+                    t is running in the Octave interpreter.
+isfile              Return true if F is a regular file and fa
+                    lse otherwise.
+isfolder            Return true if F is a directory and false
+                    otherwise.
+ismac               Return true if Octave is running on a Mac
+                    OS X system and false otherwise.
+ispc                Return true if Octave is running on a Win
+                    dows system and false otherwise.
+isunix              Return true if Octave is running on a Uni
+                    x-like system and false otherwise.
+license             Get license information for Octave and Oc
+                    tave packages.
+loadobj             Method of a class to manipulate an object
+                    after loading it from a file.
+ls                  List directory contents.
+ls_command          Query or set the shell command used by Oc
+                    tave’s ‘ls’ command.
+menu                Display a menu with heading TITLE and opt
+                    ions OPT1, .
+methods             List the names of the public methods for 
+                    the object OBJ or the named class CLASSNA
+                    AME.
+mex                 Compile source code written in C, C++, or
+                    Fortran, to a MEX file.
+mexext              Return the filename extension used for ME
+                    X files.
+mkdir               Create a directory named DIRNAME in the d
+                    irectory PARENT, creating any intermediat
+                    te directories if necessary.
+mkoctfile           The ‘mkoctfile’ function compiles sou
+                    rce code written in C, C++, or Fortran.
+movefile            Move the source file or directory F1 to t
+                    he destination F2.
+nargchk             Return an appropriate error message strin
+                    g (or structure) if the number of inputs
+                    requested is invalid.
+news                Display the current NEWS file for Octave 
+                    or an installed package.
+nthargout           Return the Nth output argument of the fun
+                    ction specified by the function handle or
+                    r string FUNC.
+open                Open the file FILE in Octave or in an ext
+                    ernal application based on the file type
+                    as determined by the filename extension.
+                    .
+orderfields         Return a _copy_ of S1 with fields arrange
+                    d alphabetically, or as specified by the
+                    second input.
+pack                Consolidate workspace memory in MATLAB.
+parseparams         Return in REG the cell elements of PARAM 
+                    up to the first string element and in PRO
+                    OP all remaining elements beginning with
+                    the first string element.
+perl                Invoke Perl script SCRIPTFILE, possibly w
+                    ith a list of command line arguments.
+python              Invoke Python script SCRIPTFILE, possibly
+                    with a list of command line arguments.
+recycle             Query or set the preference for recycling
+                    deleted files.
+saveobj             Method of a class to manipulate an object
+                    prior to saving it to a file.
+setfield            Return a _copy_ of the structure S with t
+                    he field member FIELD set to the value VA
+                    AL.
+swapbytes           Swap the byte order on values, converting
+                    from little endian to big endian and vic
+                    ce versa.
+symvar              Identify the symbolic variable names in t
+                    he string STR.
+tar                 Pack the list of files and directories sp
+                    ecified in FILES into the TAR archive TAR
+                    RFILE.
+tempdir             Return the name of the host system’s di
+                    rectory for temporary files.
+unix                Execute a system command if running under
+                    a Unix-like operating system, otherwise
+                    do nothing.
+unpack              Unpack the archive FILE based on its exte
+                    nsion to the directory DIR.
+validateattributes  Check validity of input argument.
+ver                 Display a header containing the current O
+                    ctave version number, license string, and
+                    d operating system.
+what                List the Octave specific files in directo
+                    ry DIR.
+zip                 Compress the list of files and directorie
+                    s specified in FILES into the ZIP archive
+                    e ZIPFILE.
+decic               Compute consistent implicit ODE initial c
+                    onditions Y0_NEW and YP0_NEW given initia
+                    al guesses Y0 and YP0.
+ode15i              Solve a set of fully-implicit Ordinary Di
+                    fferential Equations (ODEs) or index 1 Di
+                    ifferential Algebraic Equations (DAEs).
+ode15s              Solve a set of stiff Ordinary Differentia
+                    l Equations (ODEs) or stiff semi-explicit
+                    t index 1 Differential Algebraic Equation
+                    ns (DAEs).
+ode23               Solve a set of non-stiff Ordinary Differe
+                    ntial Equations (non-stiff ODEs) with the
+                    e well known explicit Bogacki-Shampine me
+                    ethod of order 3.
+ode45               Solve a set of non-stiff Ordinary Differe
+                    ntial Equations (non-stiff ODEs) with the
+                    e well known explicit Dormand-Prince meth
+                    hod of order 4.
+odeget              Query the value of the property FIELD in 
+                    the ODE options structure ODE_OPT.
+odeplot             Open a new figure window and plot the sol
+                    ution of an ode problem at each time step
+                    p during the integration.
+odeset              Create or modify an ODE options structure
+                    .
+fminbnd             Find a minimum point of a univariate func
+                    tion.
+fminsearch          Find a value of X which minimizes the mul
+                    ti-variable function FUN.
+fminunc             Solve an unconstrained optimization probl
+                    em defined by the function FCN.
+fsolve              Solve a system of nonlinear equations def
+                    ined by the function FCN.
+fzero               Find a zero of a univariate function.
+humps               Evaluate a function with multiple minima,
+                    maxima, and zero crossings.
+lsqnonneg           Minimize ‘norm (C*X - D)’ subject to 
+                    ‘X >= 0’.
+optimget            Return the specific option PARNAME from t
+                    he optimization options structure OPTIONS
+                    S created by ‘optimset’.
+pqpnonneg           Minimize ‘1/2*X'*C*X + D'*X’ subject 
+                    to ‘X >= 0’.
+qp                  Solve a quadratic program (QP).
+sqp                 Minimize an objective function using sequ
+                    ential quadratic programming (SQP).
+matlabroot          Return the name of the top-level Octave i
+                    nstallation directory.
+pathdef             Return the default path for Octave.
+savepath            Save the unique portion of the current fu
+                    nction search path that is not set during
+                    g Octave’s initialization process to FI
+                    ILE.
+pkg                 Manage or query packages (groups of add-o
+                    n functions) for Octave.
+annotation          Draw annotations to emphasize parts of a 
+                    figure.
+axis                Set axis limits and appearance.
+box                 Control display of the axes border.
+camlookat           Move the camera and adjust its properties
+                    to look at objects.
+camorbit            Rotate the camera up/down and left/right 
+                    around its target.
+camtarget           Set or get where the camera is pointed.
+clabel              Add labels to the contours of a contour p
+                    lot.
+daspect             Query or set the data aspect ratio of the
+                    current axes.
+datetick            Add date-formatted tick labels to an axis
+                    .
+diffuse             Calculate the diffuse reflection strength
+                    of a surface defined by the normal vecto
+                    or elements SX, SY, SZ.
+grid                Control the display of plot grid lines.
+hidden              Control mesh hidden line removal.
+legend              Display a legend for the current axes usi
+                    ng the specified strings as labels.
+material            Set reflectance properties for the lighti
+                    ng of surfaces and patches.
+shading             Set the shading of patch or surface graph
+                    ic objects.
+specular            Calculate the specular reflection strengt
+                    h of a surface defined by the normal vect
+                    tor elements SX, SY, SZ using Phong’s a
+                    approximation.
+title               Specify the string used as a title for th
+                    e current axis.
+xlabel              Specify the string used to label the x-ax
+                    is of the current axis.
+ylabel              Specify the string used to label the y-ax
+                    is of the current axis.
+zlabel              Specify the string used to label the z-ax
+                    is of the current axis.
+bar                 Produce a bar graph from two vectors of X
+                    -Y data.
+barh                Produce a horizontal bar graph from two v
+                    ectors of X-Y data.
+camlight            Add a light object to a figure using a si
+                    mple interface.
+colorbar            Add a colorbar to the current axes.
+comet               Produce a simple comet style animation al
+                    ong the trajectory provided by the input
+                    coordinate vectors (X, Y).
+comet3              Produce a simple comet style animation al
+                    ong the trajectory provided by the input
+                    coordinate vectors (X, Y, Z).
+compass             Plot the ‘(U, V)’ components of a vec
+                    tor field emanating from the origin of a
+                    polar plot.
+contour             Create a 2-D contour plot.
+contour3            Create a 3-D contour plot.
+contourf            Create a 2-D contour plot with filled int
+                    ervals.
+cylinder            Plot a 3-D unit cylinder.
+ellipsoid           Plot a 3-D ellipsoid.
+errorbar            Create a 2-D plot with errorbars.
+ezcontourf          Plot the filled contour lines of a functi
+                    on.
+ezmesh              Plot the mesh defined by a function.
+ezmeshc             Plot the mesh and contour lines defined b
+                    y a function.
+ezplot              Plot the 2-D curve defined by the functio
+                    n F.
+ezplot3             Plot a parametrically defined curve in th
+                    ree dimensions.
+ezpolar             Plot a 2-D function in polar coordinates.
+ezsurf              Plot the surface defined by a function.
+ezsurfc             Plot the surface and contour lines define
+                    d by a function.
+feather             Plot the ‘(U, V)’ components of a vec
+                    tor field emanating from equidistant poin
+                    nts on the x-axis.
+fill                Create one or more filled 2-D polygons.
+fplot               Plot a function FN within the range defin
+                    ed by LIMITS.
+hist                Produce histogram counts or plots.
+isocaps             Create end-caps for isosurfaces of 3-D da
+                    ta.
+isosurface          Calculate isosurface of 3-D volume data.
+line                Create a line object from X and Y (and po
+                    ssibly Z) and insert it in the current ax
+                    xes.
+loglog              Produce a 2-D plot using logarithmic scal
+                    es for both axes.
+loglogerr           Produce 2-D plots on a double logarithm a
+                    xis with errorbars.
+mesh                Plot a 3-D wireframe mesh.
+meshc               Plot a 3-D wireframe mesh with underlying
+                    contour lines.
+meshz               Plot a 3-D wireframe mesh with a surround
+                    ing curtain.
+pareto              Draw a Pareto chart.
+patch               Create patch object in the current axes w
+                    ith vertices at locations (X, Y) and of c
+                    color C.
+pcolor              Produce a 2-D density plot.
+peaks               Plot a function with lots of local maxima
+                    and minima.
+pie                 Plot a 2-D pie chart.
+pie3                Plot a 3-D pie chart.
+plot                Produce 2-D plots.
+plot3               Produce 3-D plots.
+plotyy              Plot two sets of data with independent y-
+                    axes and a common x-axis.
+polar               Create a 2-D plot from polar coordinates 
+                    THETA and RHO.
+quiver              Plot a 2-D vector field with arrows.
+quiver3             Plot a 3-D vector field with arrows.
+rectangle           Draw a rectangular patch defined by POS a
+                    nd CURV.
+reducepatch         Reduce the number of faces and vertices i
+                    n a patch object while retaining the over
+                    rall shape of the patch.
+reducevolume        Reduce the volume of the dataset in V acc
+                    ording to the values in R.
+ribbon              Draw a ribbon plot for the columns of Y v
+                    s.
+scatter             Draw a 2-D scatter plot.
+scatter3            Draw a 3-D scatter plot.
+semilogx            Produce a 2-D plot using a logarithmic sc
+                    ale for the x-axis.
+semilogxerr         Produce 2-D plots using a logarithmic sca
+                    le for the x-axis and errorbars at each d
+                    data point.
+semilogy            Produce a 2-D plot using a logarithmic sc
+                    ale for the y-axis.
+semilogyerr         Produce 2-D plots using a logarithmic sca
+                    le for the y-axis and errorbars at each d
+                    data point.
+shrinkfaces         Reduce the size of faces in a patch by th
+                    e shrink factor SF.
+slice               Plot slices of 3-D data/scalar fields.
+smooth3             Smooth values of 3-dimensional matrix DAT
+                    A.
+sombrero            Plot the familiar 3-D sombrero function.
+sphere              Plot a 3-D unit sphere.
+stairs              Produce a stairstep plot.
+stem                Plot a 2-D stem graph.
+stem3               Plot a 3-D stem graph.
+stemleaf            Compute and display a stem and leaf plot 
+                    of the vector X.
+surf                Plot a 3-D surface mesh.
+surface             Create a surface graphic object given mat
+                    rices X and Y from ‘meshgrid’ and a m
+                    matrix of values Z corresponding to the X
+                    X and Y coordinates of the surface.
+surfc               Plot a 3-D surface mesh with underlying c
+                    ontour lines.
+surfl               Plot a 3-D surface using shading based on
+                    various lighting models.
+surfnorm            Find the vectors normal to a meshgridded 
+                    surface.
+tetramesh           Display the tetrahedrons defined in the m
+                    -by-4 matrix T as 3-D patches.
+trimesh             Plot a 3-D triangular wireframe mesh.
+triplot             Plot a 2-D triangular mesh.
+trisurf             Plot a 3-D triangular surface.
+waterfall           Plot a 3-D waterfall plot.
+allchild            Find all children, including hidden child
+                    ren, of a graphics object.
+ancestor            Return the first ancestor of handle objec
+                    t H whose type matches TYPE, where TYPE i
+                    is a character string.
+axes                Create a Cartesian axes object and return
+                    a handle to it, or set the current axes
+                    to HAX.
+cla                 Clear the current or specified (HAX) axes
+                    object.
+clf                 Clear the current figure window.
+close               Close figure window(s).
+closereq            Close the current figure and delete all g
+                    raphics objects associated with it.
+colstyle            Parse the line specification STYLE and re
+                    turn the line style, color, and markers g
+                    given.
+copyobj             Construct a copy of the graphic objects a
+                    ssociated with the handles HORIG and retu
+                    urn new handles HNEW to the new objects.
+figure              Create a new figure window for plotting.
+findall             Find graphics object, including hidden on
+                    es, with specified properties.
+findfigs            Find all visible figures that are current
+                    ly off the screen and move them onto the
+                    screen.
+findobj             Find graphics objects with specified prop
+                    erties.
+gca                 Return a handle to the current axes objec
+                    t.
+gcbf                Return a handle to the figure containing 
+                    the object whose callback is currently ex
+                    xecuting.
+gcbo                Return a handle to the object whose callb
+                    ack is currently executing.
+gcf                 Return a handle to the current figure.
+gco                 Return a handle to the current object of 
+                    the current figure, or a handle to the cu
+                    urrent object of the figure with handle F
+                    FIG.
+ginput              Return the position and type of mouse but
+                    ton clicks and/or key strokes in the curr
+                    rent figure window.
+graphics_toolkit    Query or set the default graphics toolkit
+                    which is assigned to new figures.
+groot               Return a handle to the root graphics obje
+                    ct.
+hdl2struct          Return a structure, S, whose fields descr
+                    ibe the properties of the object, and its
+                    s children, associated with the handle, H
+                    H.
+hggroup             Create handle graphics group object with 
+                    axes parent HAX.
+hgload              Load the graphics objects in FILENAME int
+                    o a vector of graphics handles H.
+hgsave              Save the graphics handle(s) H to the file
+                    FILENAME in the format FMT.
+hold                Toggle or set the "hold" state of the plo
+                    tting engine which determines whether new
+                    w graphic objects are added to the plot o
+                    or replace the existing objects.
+isaxes              Return true if H is an axes graphics hand
+                    le and false otherwise.
+isfigure            Return true if H is a figure graphics han
+                    dle and false otherwise.
+isgraphics          Return true if H is a graphics handle (of
+                    type TYPE) and false otherwise.
+ishandle            Return true if H is a handle to a graphic
+                    s or Java object and false otherwise.
+ishold              Return true if the next plot will be adde
+                    d to the current plot, or false if the pl
+                    lot device will be cleared before drawing
+                    g the next plot.
+linkaxes            Link the axis limits of 2-D plots such th
+                    at a change in one is propagated to the o
+                    others.
+linkprop            Link graphic object properties, such that
+                    a change in one is propagated to the oth
+                    hers.
+meshgrid            Given vectors of X and Y coordinates, ret
+                    urn matrices XX and YY corresponding to a
+                    a full 2-D grid.
+ndgrid              Given n vectors X1, .
+newplot             Prepare graphics engine to produce a new 
+                    plot.
+openfig             Read saved figure window(s) from FILENAME
+                    and return graphics handle(s) H.
+pan                 Control the interactive panning mode of a
+                    figure in the GUI.
+print               Format a figure for printing and either s
+                    ave it to a file, send it to a printer, o
+                    or return an RGB image.
+printd              Convert any object acceptable to ‘disp�
+                    �� into the format selected by the suffix
+                    x of FILENAME.
+refresh             Refresh a figure, forcing it to be redraw
+                    n.
+refreshdata         Evaluate any ‘datasource’ properties 
+                    of the current figure and update the plot
+                    t if the corresponding data has changed.
+rotate              Rotate the plot object H through ALPHA de
+                    grees around the line with direction DIRE
+                    ECTION and origin ORIGIN.
+rotate3d            Control the interactive 3-D rotation mode
+                    of a figure in the GUI.
+savefig             Save figure windows specified by graphics
+                    handle(s) H to file FILENAME.
+shg                 Show the graph window.
+struct2hdl          Construct a graphics handle object H from
+                    the structure S.
+subplot             Set up a plot grid with ROWS by COLS subw
+                    indows and set the current axes for plott
+                    ting (‘gca’) to the location given by
+                    y INDEX.
+zoom                Zoom the current axes object or control t
+                    he interactive zoom mode of a figure in t
+                    the GUI.
+compan              Compute the companion matrix correspondin
+                    g to polynomial coefficient vector C.
+conv                Convolve two vectors A and B.
+deconv              Deconvolve two vectors (polynomial divisi
+                    on).
+mkpp                Construct a piecewise polynomial (pp) str
+                    ucture from sample points BREAKS and coef
+                    fficients COEFS.
+mpoles              Identify unique poles in P and their asso
+                    ciated multiplicity.
+padecoef            Compute the Nth-order Padé approximant o
+                    f the continuous-time delay T in transfer
+                    r function form.
+pchip               Return the Piecewise Cubic Hermite Interp
+                    olating Polynomial (pchip) of points X an
+                    nd Y.
+poly                If A is a square N-by-N matrix, ‘poly (
+                    A)’ is the row vector of the coefficien
+                    nts of ‘det (z * eye (N) - A)’, the c
+                    characteristic polynomial of A.
+polyder             Return the coefficients of the derivative
+                    of the polynomial whose coefficients are
+                    e given by the vector P.
+polyeig             Solve the polynomial eigenvalue problem o
+                    f degree L.
+polyfit             Return the coefficients of a polynomial P
+                    (X) of degree N that minimizes the least-
+                    -squares-error of the fit to the points
+                    ‘[X, Y]’.
+polygcd             Find the greatest common divisor of two p
+                    olynomials.
+polyint             Return the coefficients of the integral o
+                    f the polynomial whose coefficients are r
+                    represented by the vector P.
+polyout             Display a formatted version of the polyno
+                    mial C.
+polyreduce          Reduce a polynomial coefficient vector to
+                    a minimum number of terms by stripping o
+                    off any leading zeros.
+polyval             Evaluate the polynomial P at the specifie
+                    d values of X.
+ppder               Compute the piecewise M-th derivative of 
+                    a piecewise polynomial struct PP.
+ppjumps             Evaluate the boundary jumps of a piecewis
+                    e polynomial.
+residue             The first calling form computes the parti
+                    al fraction expansion for the quotient of
+                    f the polynomials, B and A.
+spline              Return the cubic spline interpolant of po
+                    ints X and Y.
+splinefit           Fit a piecewise cubic spline with breaks 
+                    (knots) BREAKS to the noisy data, X and Y
+                    Y.
+addpref             Add the preference PREF and associated va
+                    lue VAL to the named preference group GRO
+                    OUP.
+getpref             Return the preference value corresponding
+                    to the named preference PREF in the pref
+                    ference group GROUP.
+ispref              Return true if the named preference PREF 
+                    exists in the preference group GROUP.
+prefdir             Return the directory that holds the prefe
+                    rences for Octave.
+preferences         Display the GUI preferences dialog window
+                    for Octave.
+rmpref              Remove the named preference PREF from the
+                    preference group GROUP.
+setpref             Set the preference PREF to the given VAL 
+                    in the named preference group GROUP.
+profexport          Export profiler data as HTML.
+profshow            Display flat per-function profiler result
+                    s.
+intersect           Return the unique elements common to both
+                    A and B sorted in ascending order.
+ismember            Return a logical matrix TF with the same 
+                    shape as A which is true (1) if the eleme
+                    ent in A is found in S and false (0) if i
+                    it is not.
+setdiff             Return the unique elements in A that are 
+                    not in B sorted in ascending order.
+setxor              Return the unique elements exclusive to s
+                    ets A or B sorted in ascending order.
+union               Return the unique elements that are in ei
+                    ther A or B sorted in ascending order.
+unique              Return the unique elements of X sorted in
+                    ascending order.
+arch_fit            Fit an ARCH regression model to the time 
+                    series Y using the scoring algorithm in E
+                    Engle’s original ARCH paper.
+arch_rnd            Simulate an ARCH sequence of length T wit
+                    h AR coefficients B and CH coefficients A
+                    A.
+arch_test           For a linear regression model
+arma_rnd            Return a simulation of the ARMA model.
+autoreg_matrix      Given a time series (vector) Y, return a 
+                    matrix with ones in the first column and
+                    the first K lagged values of Y in the ot
+                    ther columns.
+bartlett            Return the filter coefficients of a Bartl
+                    ett (triangular) window of length M.
+blackman            Return the filter coefficients of a Black
+                    man window of length M.
+detrend             If X is a vector, ‘detrend (X, P)’ re
+                    moves the best fit of a polynomial of ord
+                    der P from the data X.
+diffpara            Return the estimator D for the differenci
+                    ng parameter of an integrated time series
+                    s.
+durbinlevinson      Perform one step of the Durbin-Levinson a
+                    lgorithm.
+fftshift            Perform a shift of the vector X, for use 
+                    with the ‘fft’ and ‘ifft’ functio
+                    ons, in order to move the frequency 0 to
+                    the center of the vector or matrix.
+filter2             Apply the 2-D FIR filter B to X.
+fractdiff           Compute the fractional differences (1-L)^
+                    d x where L denotes the lag-operator and
+                    d is greater than -1.
+freqz               Return the complex frequency response H o
+                    f the rational IIR filter whose numerator
+                    r and denominator coefficients are B and
+                    A, respectively.
+freqz_plot          Plot the magnitude and phase response of 
+                    H.
+hamming             Return the filter coefficients of a Hammi
+                    ng window of length M.
+hanning             Return the filter coefficients of a Hanni
+                    ng window of length M.
+hurst               Estimate the Hurst parameter of sample X 
+                    via the rescaled range statistic.
+ifftshift           Undo the action of the ‘fftshift’ fun
+                    ction.
+movfun              Apply function FCN to a moving window of 
+                    length WLEN on data X.
+movslice            Generate indices to slice a vector of len
+                    gth N in to windows of length WLEN.
+periodogram         Return the periodogram (Power Spectral De
+                    nsity) of X.
+sinetone            Return a sinetone of frequency FREQ with 
+                    a length of SEC seconds at sampling rate
+                    RATE and with amplitude AMPL.
+sinewave            Return an M-element vector with I-th elem
+                    ent given by ‘sin (2 * pi * (I+D-1) / N
+                    N)’.
+spectral_adf        Return the spectral density estimator giv
+                    en a vector of autocovariances C, window
+                    name WIN, and bandwidth, B.
+spectral_xdf        Return the spectral density estimator giv
+                    en a data vector X, window name WIN, and
+                    bandwidth, B.
+stft                Compute the short-time Fourier transform 
+                    of the vector X with NUM_COEF coefficient
+                    ts by applying a window of WIN_SIZE data
+                    points and an increment of INC points.
+synthesis           Compute a signal from its short-time Four
+                    ier transform Y and a 3-element vector C
+                    specifying window size, increment, and w
+                    window type.
+unwrap              Unwrap radian phases by adding or subtrac
+                    ting multiples of 2*pi as appropriate to
+                    remove jumps greater than TOL.
+yulewalker          Fit an AR (p)-model with Yule-Walker esti
+                    mates given a vector C of autocovariances
+                    s ‘[gamma_0, .
+bicg                Solve the linear system of equations ‘A
+                    * X = B’ by means of the Bi-Conjugate
+                    Gradient iterative method.
+bicgstab            Solve ‘A x = b’ using the stabilizied
+                    Bi-conjugate gradient iterative method.
+cgs                 Solve ‘A x = b’, where A is a square 
+                    matrix, using the Conjugate Gradients Squ
+                    uared method.
+colperm             Return the column permutations such that 
+                    the columns of ‘S (:, P)’ are ordered
+                    d in terms of increasing number of nonzer
+                    ro elements.
+eigs                Calculate a limited number of eigenvalues
+                    and eigenvectors of A, based on a select
+                    tion criteria.
+gmres               Solve ‘A x = b’ using the Preconditio
+                    ned GMRES iterative method with restart,
+                    a.
+gplot               Plot a graph defined by A and XY in the g
+                    raph theory sense.
+pcg                 Solve the linear system of equations ‘A
+                    * X = B’ by means of the Preconditione
+                    ed Conjugate Gradient iterative method.
+pcr                 Solve the linear system of equations ‘A
+                    * X = B’ by means of the Preconditione
+                    ed Conjugate Residuals iterative method.
+qmr                 Solve ‘A x = b’ using the Quasi-Minim
+                    al Residual iterative method (without loo
+                    ok-ahead).
+spaugment           Create the augmented matrix of A.
+spconvert           Convert a simple sparse matrix format eas
+                    ily generated by other programs into Octa
+                    ave’s internal sparse format.
+spdiags             A generalization of the function ‘diag�
+                    ��.
+speye               Return a sparse identity matrix of size M
+                    xN.
+sprand              Generate a sparse matrix with uniformly d
+                    istributed random values.
+sprandn             Generate a sparse matrix with normally di
+                    stributed random values.
+sprandsym           Generate a symmetric random sparse matrix
+                    .
+svds                Find a few singular values of the matrix 
+                    A.
+tfqmr               Solve ‘A x = b’ using the Transpose-T
+                    ree qmr method, based on the cgs.
+treeplot            Produce a graph of tree or forest.
+beta                Compute the Beta function for real inputs
+                    A and B.
+betaincinv          Compute the inverse of the normalized inc
+                    omplete beta function.
+betaln              Compute the natural logarithm of the Beta
+                    function for real inputs A and B.
+ellipke             Compute complete elliptic integrals of th
+                    e first K(M) and second E(M) kind.
+gammainc            Compute the normalized incomplete gamma f
+                    unction.
+gammaincinv         Compute the inverse of the normalized inc
+                    omplete gamma function.
+isprime             Return a logical array which is true wher
+                    e the elements of X are prime numbers and
+                    d false where they are not.
+lcm                 Compute the least common multiple of X an
+                    d Y, or of the list of all arguments.
+legendre            Compute the associated Legendre function 
+                    of degree N and order M = 0 .
+reallog             Return the real-valued natural logarithm 
+                    of each element of X.
+realpow             Compute the real-valued, element-by-eleme
+                    nt power operator.
+realsqrt            Return the real-valued square root of eac
+                    h element of X.
+hadamard            Construct a Hadamard matrix (Hn) of size 
+                    N-by-N.
+hankel              Return the Hankel matrix constructed from
+                    the first column C, and (optionally) the
+                    e last row R.
+hilb                Return the Hilbert matrix of order N.
+invhilb             Return the inverse of the Hilbert matrix 
+                    of order N.
+pascal              Return the Pascal matrix of order N if �
+                    �T = 0’.
+toeplitz            Return the Toeplitz matrix constructed fr
+                    om the first column C, and optionally the
+                    e first row R.
+vander              Return the Vandermonde matrix whose next 
+                    to last column is C.
+wilkinson           Return the Wilkinson matrix of order N.
+bounds              Return the smallest and largest values of
+                    the input data X.
+center              Center data by subtracting its mean.
+discrete_cdf        For each element of X, compute the cumula
+                    tive distribution function (CDF) at X of
+                    a univariate discrete distribution which
+                    h assumes the values in V with probabilit
+                    ties P.
+discrete_inv        For each element of X, compute the quanti
+                    le (the inverse of the CDF) at X of the u
+                    univariate distribution which assumes the
+                    e values in V with probabilities P.
+discrete_pdf        For each element of X, compute the probab
+                    ility density function (PDF) at X of a un
+                    nivariate discrete distribution which ass
+                    sumes the values in V with probabilities
+                    P.
+discrete_rnd        Return a matrix of random samples from th
+                    e univariate distribution which assumes t
+                    the values in V with probabilities P.
+empirical_cdf       For each element of X, compute the cumula
+                    tive distribution function (CDF) at X of
+                    the empirical distribution obtained from
+                    m the univariate sample DATA.
+empirical_inv       For each element of X, compute the quanti
+                    le (the inverse of the CDF) at X of the e
+                    empirical distribution obtained from the
+                    univariate sample DATA.
+empirical_pdf       For each element of X, compute the probab
+                    ility density function (PDF) at X of the
+                    empirical distribution obtained from the
+                    e univariate sample DATA.
+empirical_rnd       Return a matrix of random samples from th
+                    e empirical distribution obtained from th
+                    he univariate sample DATA.
+kendall             Compute Kendall’s TAU.
+mad                 Compute the mean or median absolute devia
+                    tion of the elements of X.
+median              Compute the median value of the elements 
+                    of the vector X.
+mode                Compute the most frequently occurring val
+                    ue in a dataset (mode).
+movmad              Calculate the moving mean absolute deviat
+                    ion over a sliding window of length WLEN
+                    on data X.
+movmax              Calculate the moving maximum over a slidi
+                    ng window of length WLEN on data X.
+movmean             Calculate the moving average over a slidi
+                    ng window of length WLEN on data X.
+movmedian           Calculate the moving median over a slidin
+                    g window of length WLEN on data X.
+movmin              Calculate the moving minimum over a slidi
+                    ng window of length WLEN on data X.
+movprod             Calculate the moving product over a slidi
+                    ng window of length WLEN on data X.
+movstd              Calculate the moving standard deviation o
+                    ver a sliding window of length WLEN on da
+                    ata X.
+movsum              Calculate the moving sum over a sliding w
+                    indow of length WLEN on data X.
+movvar              Calculate the moving variance over a slid
+                    ing window of length WLEN on data X.
+prctile             For a sample X, compute the quantiles, Q,
+                    corresponding to the cumulative probabil
+                    lity values, P, in percent.
+quantile            For a sample, X, calculate the quantiles,
+                    Q, corresponding to the cumulative proba
+                    ability values in P.
+ranks               Return the ranks (in the sense of order s
+                    tatistics) of X along the first non-singl
+                    leton dimension adjusted for ties.
+run_count           Count the upward runs along the first non
+                    -singleton dimension of X of length 1, 2,
+                    , .
+runlength           Find the lengths of all sequences of comm
+                    on values.
+statistics          Return a vector with the minimum, first q
+                    uartile, median, third quartile, maximum,
+                    , mean, standard deviation, skewness, and
+                    d kurtosis of the elements of the vector
+                    X.
+std                 Compute the standard deviation of the ele
+                    ments of the vector X.
+base2dec            Convert S from a string of digits in base
+                    BASE to a decimal integer (base 10).
+bin2dec             Return the decimal number corresponding t
+                    o the binary number represented by the st
+                    tring S.
+cstrcat             Return a string containing all the argume
+                    nts concatenated horizontally with traili
+                    ing white space preserved.
+deblank             Remove trailing whitespace and nulls from
+                    S.
+dec2base            Return a string of symbols in base BASE c
+                    orresponding to the non-negative integer
+                    D.
+dec2bin             Return a binary number corresponding to t
+                    he non-negative integer D, as a string of
+                    f ones and zeros.
+dec2hex             Return the hexadecimal string correspondi
+                    ng to the non-negative integer D.
+erase               Delete all occurrences of PTN within STR.
+hex2dec             Return the integer corresponding to the h
+                    exadecimal number represented by the stri
+                    ing S.
+index               Return the position of the first occurren
+                    ce of the string T in the string S, or 0
+                    if no occurrence is found.
+isletter            Return a logical array which is true wher
+                    e the elements of S are letters and false
+                    e where they are not.
+mat2str             Format real, complex, and logical matrice
+                    s as strings.
+native2unicode      Convert byte stream NATIVE_BYTES to UTF-8
+                    using CODEPAGE.
+ostrsplit           Split the string S using one or more sepa
+                    rators SEP and return a cell array of str
+                    rings.
+rindex              Return the position of the last occurrenc
+                    e of the character string T in the charac
+                    cter string S, or 0 if no occurrence is f
+                    found.
+strcat              Return a string containing all the argume
+                    nts concatenated horizontally.
+strjust             Return the text, S, justified according t
+                    o POS, which may be "left", "center", or
+                    "right".
+strsplit            Split the string STR using the delimiters
+                    specified by DEL and return a cell strin
+                    ng array of substrings.
+strtok              Find all characters in the string STR up 
+                    to, but not including, the first characte
+                    er which is in the string DELIM.
+strtrim             Remove leading and trailing whitespace fr
+                    om S.
+substr              Return the substring of S which starts at
+                    character number OFFSET and is LEN chara
+                    acters long.
+unicode2native      Convert UTF-8 string UTF8_STR to byte str
+                    eam using CODEPAGE.
+validatestring      Verify that STR is an element, or substri
+                    ng of an element, in STRARRAY.
+assert              Produce an error if the specified conditi
+                    on is not met.
+demo                Run example code block N associated with 
+                    the function NAME.
+example             Display the code for example N associated
+                    with the function NAME, but do not run i
+                    it.
+fail                Return true if CODE fails with an error m
+                    essage matching PATTERN, otherwise produc
+                    ce an error.
+rundemos            Execute built-in demos for all m-files in
+                    the specified DIRECTORY.
+runtests            Execute built-in tests for all m-files in
+                    the specified DIRECTORY.
+speed               Determine the execution time of an expres
+                    sion (F) for various input values (N).
+test                Perform built-in self-tests from the firs
+                    t file in the loadpath matching NAME.
+addtodate           Add Q amount of time (with units F) to th
+                    e serial datenum, D.
+asctime             Convert a time structure to a string usin
+                    g the following format: "ddd mmm mm HH:MM
+                    M:SS yyyy\n".
+calendar            Return the current monthly calendar in a 
+                    6x7 matrix.
+clock               Return the current local date and time as
+                    a date vector.
+ctime               Convert a value returned from ‘time’ 
+                    (or any other non-negative integer), to t
+                    the local time and return a string of the
+                    e same form as ‘asctime’.
+date                Return the current date as a character st
+                    ring in the form DD-MMM-YYYY.
+datenum             Return the date/time input as a serial da
+                    y number, with Jan 1, 0000 defined as day
+                    y 1.
+datestr             Format the given date/time according to t
+                    he format F and return the result in STR.
+                    .
+datevec             Convert a serial date number (see ‘date
+                    num’) or date string (see ‘datestr’
+                    �) into a date vector.
+eomday              Return the last day of the month M for th
+                    e year Y.
+etime               Return the difference in seconds between 
+                    two time values returned from ‘clock’
+                    � (T2 - T1).
+is_leap_year        Return true if YEAR is a leap year and fa
+                    lse otherwise.
+now                 Return the current local date/time as a s
+                    erial day number (see ‘datenum’).
+weekday             Return the day of the week as a number in
+                    N and as a string in S.
+@ftp/ascii          Set the FTP connection F to use ASCII mod
+                    e for transfers.
+@ftp/binary         Set the FTP connection F to use binary mo
+                    de for transfers.
+@ftp/cd             Get or set the remote directory on the FT
+                    P connection F.
+@ftp/close          Close the FTP connection represented by t
+                    he FTP object F.
+@ftp/delete         Delete the remote file FILE over the FTP 
+                    connection F.
+@ftp/dir            List the current directory in verbose for
+                    m for the FTP connection F.
+@ftp/ftp            Connect to the FTP server HOST with USERN
+                    AME and PASSWORD.
+@ftp/mget           Download a remote file FILE or directory 
+                    DIR to the local directory on the FTP con
+                    nnection F.
+@ftp/mkdir          Create the remote directory PATH, over th
+                    e FTP connection F.
+@ftp/mput           Upload the local file FILE into the curre
+                    nt remote directory on the FTP connection
+                    n F.
+@ftp/rename         Rename or move the remote file or directo
+                    ry OLDNAME to NEWNAME, over the FTP conne
+                    ection F.
+@ftp/rmdir          Remove the remote directory PATH, over th
+                    e FTP connection F.
+gnuplot_binary      Query or set the name of the program invo
+                    ked by the plot command when the graphics
+                    s toolkit is set to "gnuplot".
+calc_area           This m-file calculates the area of a circ
+                    le,  and displays the result.
+sin_x               sin_x.m : Esse arquivo M calcula e desenh
+                    a a  função seno(x) para 0 <= x <= 6.
+>> lookfor path
+pathsep             Query the character used to separate dire
+                    ctories in a path.
+EXEC_PATH           Query or set the internal variable that s
+                    pecifies a colon separated list of direct
+                    tories to append to the shell PATH when e
+                    executing external programs.
+IMAGE_PATH          Query or set the internal variable that s
+                    pecifies a colon separated list of direct
+                    tories in which to search for image files
+                    s.
+genpath             Return a path constructed from DIR and al
+                    l its subdirectories.
+rehash              Reinitialize Octave’s load path directo
+                    ry cache.
+command_line_path   Return the command line path variable.
+restoredefaultpath  Restore Octave’s path to its initial st
+                    ate at startup.
+path                Modify or display Octave’s load path.
+addpath             Add named directories to the function sea
+                    rch path.
+rmpath              Remove DIR1, .
+file_in_loadpath    Return the absolute name of FILE if it ca
+                    n be found in the list of directories spe
+                    ecified by ‘path’.
+file_in_path        Return the absolute name of FILE if it ca
+                    n be found in PATH.
+dir_in_loadpath     Return the absolute name of the loadpath 
+                    element matching DIR if it can be found i
+                    in the list of directories specified by
+                    ‘path’.
+uigetfile           Open a GUI dialog for selecting a file an
+                    d return the filename FNAME, the path to
+                    this file FPATH, and the filter index FL
+                    LTIDX.
+lookfor             Search for the string STR in the document
+                    ation of all functions in the current fun
+                    nction search path.
+javaaddpath         Add CLSPATH to the dynamic class path of 
+                    the Java virtual machine.
+javaclasspath       Return the class path of the Java virtual
+                    machine in the form of a cell array of s
+                    strings.
+javarmpath          Remove CLSPATH from the dynamic class pat
+                    h of the Java virtual machine.
+pathdef             Return the default path for Octave.
+savepath            Save the unique portion of the current fu
+                    nction search path that is not set during
+                    g Octave’s initialization process to FI
+                    ILE.
+test                Perform built-in self-tests from the firs
+                    t file in the loadpath matching NAME.
+@ftp/mkdir          Create the remote directory PATH, over th
+                    e FTP connection F.
+@ftp/rmdir          Remove the remote directory PATH, over th
+                    e FTP connection F.
+>> mkdir mynewdir
+ans = 1
+>> readdir
+error: called from
+    print_usage at line 79 column 5
+error: Invalid call to readdir.  Correct usage is:
+
+ -- FILES = readdir (DIR)
+ -- [FILES, ERR, MSG] = readdir (DIR)
+
+Additional help for built-in functions and operators is
+available in the online version of the manual.  Use the command
+'doc <topic>' to search the manual index.
+
+Help and information about Octave is also available on the WWW
+at https://www.octave.org and via the help@octave.org
+mailing list.
+>> doc readdir
+>> clear
+>> clc
+>> test2
+>> 

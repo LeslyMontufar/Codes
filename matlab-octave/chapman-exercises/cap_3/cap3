@@ -1,0 +1,61 @@
+>> cap3 on
+error: 'cap3' undefined near line 1 column 1
+>> diary on
+>> open cap3
+>> clear cap3
+>> open cap3
+>> clear
+>> clc
+>> ex_3_3
+Enter the x value: 2
+Enter the y value: 3
+f(2, 3) = 5
+>> ex_3_3
+Enter the x value: 2
+Enter the y value: -3
+f(2, -3) = 11
+>> ex_3_3
+Enter the x value: -2
+Enter the y value: 3
+warning: Matlab-style short-circuit operation performed for operator &
+warning: called from
+    ex_3_3 at line 22 column 1
+warning: Matlab-style short-circuit operation performed for operator &
+warning: called from
+    ex_3_3 at line 24 column 1
+f(-2, 3) = 7
+>> ex_3_3
+Enter the x value: -2
+Enter the y value: 3
+warning: Matlab-style short-circuit operation performed for operator &
+warning: called from
+    ex_3_3 at line 22 column 1
+warning: Matlab-style short-circuit operation performed for operator &
+warning: called from
+    ex_3_3 at line 24 column 1
+f(-2, 3) = 7
+>> ex_3_3
+Enter the x value: -2
+Enter the y value: -3
+warning: Matlab-style short-circuit operation performed for operator &
+warning: called from
+    ex_3_3 at line 22 column 1
+warning: Matlab-style short-circuit operation performed for operator &
+warning: called from
+    ex_3_3 at line 24 column 1
+f(-2, -3) = 13
+>> try_catch
+Forneça o índie a ser exibido: 3
+a(3)= 2
+>> try_catch
+Forneça o índie a ser exibido: 8
+Índice ilegal: 8
+>> try_catch
+Forneça o índice a ser exibido: 8
+Índice ilegal: 8
+>> clear
+>> clc
+>> try_catch
+Forneça o índice a ser exibido: 3
+a(3)= 2
+>> exit
