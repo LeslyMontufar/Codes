@@ -1,5 +1,6 @@
 clc;
-clear;
+clear all;
+close all;
 f=60;
 w =2*pi*60;
 

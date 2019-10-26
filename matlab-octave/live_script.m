@@ -1,0 +1,8 @@
+% RESOLUÇÃO COMPUTACIONAL DA LISTA EXTRA DE SS2
+
+% EXERCÍCIO 1
+%% Gráfico de Bode de H_1
+
+%%% oi
+
+
