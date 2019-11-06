@@ -27,4 +27,5 @@ subplot(131); imshow(im);
 subplot(132); imshow(im_gray);
 subplot(133); imshow(new_im);
 
-imwrite(new_im, 'Lace_icon.png');
+name = input('Image name: ');
+imwrite(new_im, [name '.png']);
