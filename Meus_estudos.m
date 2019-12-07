@@ -42,12 +42,7 @@ grid on;
 legend('VAB')
 
 %% Fasores
-figure('Name', 'Tensões - Fasores')
-fasor = 0: 0.1: VL_rms;
-polarplot(0, fasor, '*');
-hold on;
-polarplot(angle(alpha), fasor, '*');
-polarplot(angle(alpha^2), fasor, '*');
+% latex faz isso
 
 %% Funcoes uteis
 function bool = ask(question)
@@ -55,12 +50,5 @@ function bool = ask(question)
         bool = 1;
     else 
         bool = 0;
-    end
-end
-
-function ponto(tipo)
-    if tipo == 'cartesiana'
-        
-    else if tipo == 'polar'
     end
 end
