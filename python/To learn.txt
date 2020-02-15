@@ -1,4 +1,5 @@
 To learn:
 
+https://docs.python.org/3.8/tutorial/index.html
 https://www.tutorialspoint.com/python/python_pass_statement.htm
 https://www.youtube.com/watch?v=teYDMT_vLHo&t=85s
