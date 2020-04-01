@@ -3,6 +3,7 @@
 #include<DallasTemperature.h>
 
 #define pinoDS18B20 15
+#define led1 2
 
 OneWire oneWire(pinoDS18B20);
 DallasTemperature sensors(&oneWire);
@@ -29,6 +30,7 @@ void setup() {
   Serial.begin(9600);
   sensors.begin();
   verifica_contato_sensor_DS18B20();
+  pinMode(led1, OUTPUT);
 }
 
 void loop() {
@@ -45,8 +47,15 @@ void loop() {
   Serial.print(" Min: ");
   Serial.print(tempMin);
   Serial.print(" Max: ");
-  Serial.println(tempMax);
+  Serial.print(tempMax);
 
+  if (tempC > 25) {
+    digitalWrite(led1, HIGH);
+    Serial.println("\t Led1 on");
+  } else {
+    digitalWrite(led1, LOW);
+    Serial.println("\t Led1 off");
+  }
   delay(1000);
 }
 

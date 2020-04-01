@@ -1,4 +1,4 @@
-# Series de Fourier
+% Series de Fourier
 clearvars -except nro;
 close all;
 clc;
@@ -38,7 +38,7 @@ function flag = contains(vetor, line, n)
 end
 function f = get_f_fourier(a0, an, bn, n_max, L, aPart, bPart)
   str = ['@(x)' num2str(a0/2)]; % a0 é número
-  # Adding even part solution
+  % Adding even part solution
   for n = 1:n_max
     if !contains(aPart, 1, n)
       str = [str '+' num2str(an(n)) '*cos(' num2str(n*pi/L) '*x)'];
