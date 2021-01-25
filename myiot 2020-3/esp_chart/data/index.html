@@ -1,0 +1,30 @@
+<!DOCTYPE HTML><html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>ESP32 Temperatura</h2>
+  <div id="chart-temperature" class="container"></div>
+  <script src="temperatura.js"></script> 
+
+  <h2>Aquecimento do Aquário</h2>
+  <!-- <table>
+    <tr>
+        <td><button id="toggleButton">Aquecer</button></td>
+        <td><canvas id="led" width="50" height="50"></canvas></td>
+    </tr>
+  </table> -->
+  <p>
+    <span class="sensor-labels">Temperature</span>
+    <span id="temperature">%TEMPERATURE%</span>
+    <sup class="units">°C</sup>
+  </p>
+  <p>
+    <span class="sensor-labels">Aquecimento</span>
+    <span id="aquecimento">%AQUECIMENTO%</span>
+  </p>
+</body>
+</html>

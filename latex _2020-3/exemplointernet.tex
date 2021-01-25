@@ -1,0 +1,87 @@
+\documentclass[tikz,border=3mm]{standalone}
+\makeatletter
+\tikzset{ball colors/.code 2 args={\pgfutil@colorlet{tikz@ballA}{#1}%
+\pgfutil@colorlet{tikz@ballB}{#2}%
+\def\tikz@shading{balls}\tikz@addmode{\tikz@mode@shadetrue}}}%
+\pgfdeclareradialshading[tikz@ballA,tikz@ballB]{balls}{\pgfqpoint{-15bp}{15bp}}{%
+ color(0bp)=(tikz@ballA!15!tikz@ballB);
+ color(9bp)=(tikz@ballA!35!tikz@ballB);
+ color(18bp)=(tikz@ballA!50!tikz@ballB);
+ color(25bp)=(tikz@ballA!70!tikz@ballB);
+ color(50bp)=(tikz@ballA)}%
+\makeatother 
+\begin{document}
+\begingroup
+  \pgfmathsetseed{28}
+  \edef\x{0}
+  \loop
+   \pgfmathtruncatemacro\u{\x*2}
+   \pgfmathtruncatemacro\y{\x*2+1}
+   \pgfmathsetmacro{\a}{\x*60+20*(rnd-0.5)}
+   \pgfmathsetmacro{\bA}{\x*60+10*(rnd-0.5)}
+   \pgfmathsetmacro{\rA}{0.1+0.8*rnd}
+   \pgfmathsetmacro{\bB}{\x*60+30+10*(rnd-0.5)}
+   \pgfmathsetmacro{\rB}{0.1+0.8*rnd}
+   \ifnum\x=0
+    \edef\lsta{\a}
+    \edef\lstb{\bA,\bB}
+    \edef\lstr{\rA,\rB}
+   \else
+    \edef\lsta{\lsta,\a}
+    \edef\lstb{\lstb,\bA,\bB}
+    \edef\lstr{\lstr,\rA,\rB}
+   \fi
+   %  
+   \edef\x{\the\numexpr\x+1} 
+  \ifnum\x<6\repeat
+  %
+  \foreach \RR in {0,0.04,...,1}
+  {\begin{tikzpicture}
+    %
+    \begin{scope}[local bounding box=M]
+     %
+     \edef\x{0}
+     \loop
+      \pgfmathtruncatemacro\u{\x*2}
+      \pgfmathtruncatemacro\y{\x*2+1}
+      \pgfmathtruncatemacro\z{mod(\x*2+2,12)}
+      \pgfmathsetmacro{\a}{{\lsta}[\x]}
+      \ifnum\x=5
+       \pgfmathsetmacro{\b}{{\lsta}[mod(\x+1,6)]+360}
+      \else
+       \pgfmathsetmacro{\b}{{\lsta}[mod(\x+1,6)]}
+      \fi
+      \begin{scope}[shift={(0.5*\a+0.5*\b:0.5*\RR)}]
+       \begin{scope}
+        \clip (\a:1) arc[start angle=\a,end angle=\b,radius=1]
+         -- plot[samples at={\z,\y,\u},variable=\t] ({{\lstb}[\t]}:{{\lstr}[\t]})
+         -- cycle;
+        \path[ball colors={red}{blue}] circle[radius=1cm];
+       \end{scope}
+       \draw (\a:1) arc[start angle=\a,end angle=\b,radius=1]
+         -- plot[samples at={\z,\y,\u},variable=\t] ({{\lstb}[\t]}:{{\lstr}[\t]})
+         -- cycle;
+      \end{scope}
+      \edef\x{\the\numexpr\x+1} 
+     \ifnum\x<6\repeat
+     %
+     \begin{scope}[shift={(0,0.17*\RR)}]
+      \begin{scope}
+       \clip plot[samples at={0,...,6},variable=\t] ({{\lstb}[\t]}:{{\lstr}[\t]}) -- cycle; 
+       \path[ball colors={red}{blue}] circle[radius=1cm];
+      \end{scope}
+      \draw plot[samples at={0,...,6},variable=\t] ({{\lstb}[\t]}:{{\lstr}[\t]}) -- cycle; 
+     \end{scope}
+     \begin{scope}[shift={(0,-0.17*\RR)}]
+      \begin{scope}
+       \clip plot[samples at={6,...,11,0},variable=\t] ({{\lstb}[\t]}:{{\lstr}[\t]}) -- cycle; 
+       \path[ball colors={red}{blue}] circle[radius=1cm];
+      \end{scope}
+      \draw plot[samples at={6,...,11,0},variable=\t] ({{\lstb}[\t]}:{{\lstr}[\t]}) -- cycle; 
+     \end{scope}
+    \end{scope}
+    %
+    \path (-2,-2.3) (2,2.3);
+   \end{tikzpicture}}
+\endgroup
+\end{document}

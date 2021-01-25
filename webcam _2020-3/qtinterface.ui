@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Limiar:</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listaKernels">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>200</y>
+      <width>251</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string extracomment="oi">identity</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>edge detection</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>laplacian</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>laplacian w/ diagonals</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>laplacian of gaussian</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>scharr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sobel edge horizontal</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sobel edge vertical</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>line detection 45°</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>line detection 135°</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>box blur</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gaussian blur 3x3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gaussian blur 5x5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sharpen</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>unsharp masking</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDoubleSpinBox" name="limiarBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>70</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="decimals">
+     <number>2</number>
+    </property>
+    <property name="maximum">
+     <double>254.990000000000009</double>
+    </property>
+    <property name="value">
+     <double>100.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Escolha um kernel:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="blurButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>241</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Detecção de Blur Automática</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="verFrame">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>60</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Atualizar</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>200</y>
+      <width>241</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>160</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Logs:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

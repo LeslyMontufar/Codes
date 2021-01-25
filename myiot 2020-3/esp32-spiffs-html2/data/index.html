@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <title>WebSocket Teste</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var url = "ws://192.168.0.32:1337/"; //porta da websocket
+        var output, button, canvas, ctx;
+
+        // Função é chamada qnd a pagina termina o loading
+        function init() {
+            //assigna os elementos da pagina à variáveis
+            button = document.getElementById("toggleButton");
+            output = document.getElementById("output");
+            canvas = document.getElementById("led");
+
+            //desenha circulo no canvas
+            ctx = canvas.getContext("2d");
+            ctx.arc(25,25,15,0,2*Math.PI, false); //um arco de 2pi é um circulo
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            ctx.fillStyle = "black";
+            ctx.fill();
+
+            //Conecta com o servidor websocket
+            wsConnect(url);
+        }
+
+        //Chama para connectar ao webSocket server
+        function wsConnect(url) {
+            // Conecta
+            websocket = new WebSocket(url);
+
+            // Assigna os callbacks
+            websocket.onopen = function(evt) {onOpen(evt)};
+            websocket.onclose = function(evt) {onClose(evt)};
+            websocket.onmessage = function(evt) {onMessage(evt)};
+            websocket.onerror = function(evt) {onError(evt)};
+        }
+
+        // Qnd ocorre uma conexão com o servidor chama:
+        function onOpen(evt) {
+            console.log("Conectado!");
+            //ativa button
+            button.disabled = false;
+            //Manda mensagem para o servidor para getLEDState
+            doSend("getLEDState");
+        }
+
+        // Qnd a conexão é fechada
+        function onClose(evt) {
+            console.log("Dispositivo desconectado");
+            // desativa button
+            button.disabled = true;
+
+            //tenta reconectar depois de alguns segundos
+            setTimeout(function() {wsConnect(url)}, 2000); 
+            //setTimeOut, espera para executar a proxima acao mas enquanto isso realiza as outras
+        }
+
+        // Chamada qnd uma mensagem é recebida do servidor
+        function onMessage(evt) {
+            //Printa a msg
+            console.log("Recebida: "+evt.data);
+
+            //Atualiza gráfico do circulo com o estado do led
+            switch(evt.data) {
+                case "0":
+                    console.log("LED desligado");
+                    ctx.fillStyle = "black";
+                    ctx.fill();
+                    break;
+                case "1":
+                    console.log("LED ligado");
+                    ctx.fillStyle = "red";
+                    ctx.fill();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // No caso de error
+        function onError(evt) {
+            console.log("ERROR: "+evt.data);
+        }
+
+        // Envia a msg para o servidor (e printa no console)
+        function doSend(message) {
+            console.log("Enviando: "+message);
+            websocket.send(message);
+        }
+
+        // Chamada toda vez que o button HTML é pressionado
+        function onPress() {
+            doSend("toggleLED");
+            doSend("getLEDState");
+        }
+
+        // Chama init() assim que a pagina cerregue
+        window.addEventListener("load", init, false);
+    </script>
+
+    <h2>LED CONTROL</h2>
+    <table>
+        <tr>
+            <td><button id="toggleButton" onclick="onPress()" disabled>Toggle LED</button></td>
+            <td><canvas id="led" width="50" height="50"></canvas></td>
+        </tr>
+    </table>
+
+    <div id="output"></div>
+</body>
